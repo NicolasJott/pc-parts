@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Cache\RateLimiting\Limit;
+use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\RateLimiter;
@@ -11,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 class RouteServiceProvider extends ServiceProvider
 {
     /**
-     * The path to your application's "home" route.
+     * The path to the "home" route for your application.
      *
      * Typically, users are redirected here after authentication.
      *
@@ -21,20 +22,73 @@ class RouteServiceProvider extends ServiceProvider
 
     /**
      * Define your route model bindings, pattern filters, and other route configuration.
+     *
+     * @return void
      */
-    public function boot(): void
+    public function boot()
     {
-        RateLimiter::for('api', function (Request $request) {
-            return Limit::perMinute(60)->by($request->user()?->id ?: $request->ip());
-        });
+        $this->configureRateLimiting();
 
         $this->routes(function () {
             Route::middleware('api')
                 ->prefix('api')
-                ->group(base_path('routes/api.php'));
+                ->group(function () {
+                    $this->getUserRoutes();
+                    $this->getAdminRoutes();
+                });
 
             Route::middleware('web')
                 ->group(base_path('routes/web.php'));
+        });
+    }
+
+    /**
+     * Get the user routes.
+     *
+     * @return void
+     *
+     * @throws BindingResolutionException
+     */
+    private function getUserRoutes()
+    {
+        require base_path('routes/api/auth.php');
+
+        Route::group([
+            'middleware' => ['auth:user'],
+        ], function () {
+            require base_path('routes/api/profile.php');
+        });
+    }
+
+    /**
+     * Get the admin routes.
+     *
+     * @return void
+     */
+    private function getAdminRoutes()
+    {
+        Route::group([
+            'prefix' => 'admin',
+        ], function () {
+            require base_path('routes/api/admin/auth.php');
+
+            Route::group([
+                'middleware' => ['auth:admin'],
+            ], function () {
+                require base_path('routes/api/admin/profile.php');
+            });
+        });
+    }
+
+    /**
+     * Configure the rate limiters for the application.
+     *
+     * @return void
+     */
+    protected function configureRateLimiting()
+    {
+        RateLimiter::for('api', function (Request $request) {
+            return Limit::perMinute(60)->by($request->user()?->id ?: $request->ip());
         });
     }
 }
