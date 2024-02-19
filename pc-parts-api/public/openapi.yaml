@@ -150,7 +150,7 @@ paths:
       tags:
         - orders
       summary: 'Read all orders'
-      description: 'Create an Order.'
+      description: 'Read all Orders.'
       operationId: OrderController.readAll
       responses:
         '200':
@@ -168,6 +168,55 @@ paths:
       summary: 'Create order'
       description: 'Create an Order.'
       operationId: OrderController.create
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateOrderRequest'
+      responses:
+        '200':
+          description: Ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrderResource'
+      security:
+        -
+          BearerToken: []
+  '/api/orders/{id}':
+    get:
+      tags:
+        - orders
+      summary: 'Read single order'
+      description: 'Read an Order'
+      operationId: OrderController.read
+      parameters:
+        -
+          name: id
+          in: path
+          required: true
+      responses:
+        '200':
+          description: Ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrderResource'
+      security:
+        -
+          BearerToken: []
+    put:
+      tags:
+        - orders
+      summary: 'Update single order'
+      description: 'Update an Order.'
+      operationId: OrderController.update
+      parameters:
+        -
+          name: id
+          in: path
+          required: true
       requestBody:
         required: true
         content:

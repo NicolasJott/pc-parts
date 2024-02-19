@@ -58,5 +58,50 @@ class OrderService
          return $this->orderRepository->all();
      }
 
+    /**
+     * Get single order.
+     *
+     * @param string $id
+     * @return Order
+     */
+    public function getSingle(string $id): Order
+    {
+        $order = $this->orderRepository->get(['id' => $id]);
 
+        if (!$order) {
+            return abort(404, "Order with this id does not exist." );
+        }
+
+        return $this->orderRepository->get(['id' => $id]);
+    }
+
+    /**
+     * Update single order.
+     *
+     * @param Order $order
+     * @param CreateOrderRequest $request
+     * @return Order
+     */
+    public function update(Order $order, CreateOrderRequest $request): Order
+    {
+        $this->orderRepository->update($order, [
+            'firstName' => $request->firstName,
+            'lastName' => $request->lastName,
+            'email' => $request->email,
+            'phoneNumber' => $request->phoneNumber,
+        ]);
+
+        $deliveryAddress = $this->deliveryAddressRepository->get(['order_id' => $order->id]);
+
+        $this->deliveryAddressRepository->update($deliveryAddress, [
+            'address1' => $request->deliveryAddress['address1'],
+            'address2' => $request->deliveryAddress['address2'],
+            'city' => $request->deliveryAddress['city'],
+            'state' => $request->deliveryAddress['state'],
+            'zipCode' => $request->deliveryAddress['zipCode'],
+        ]);
+
+        return $this->getSingle($order->id);
+
+    }
 }

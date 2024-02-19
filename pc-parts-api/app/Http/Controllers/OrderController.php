@@ -58,7 +58,7 @@ class OrderController extends Controller
     }
 
     /**
-     * Create an Order.
+     * Read all Orders.
      *
      *
      * @return JsonResponse
@@ -82,5 +82,80 @@ class OrderController extends Controller
         $orders = $this->orderService->readAllOrders();
 
         return Response::json(OrderResource::collection($orders));
+    }
+
+    /**
+     * Read an Order
+     *
+     * @param int $id
+     * @return JsonResponse
+     */
+    #[OAT\Get(
+        path: '/api/orders/{id}',
+        operationId: 'OrderController.read',
+        summary: 'Read single order',
+        security: [['BearerToken' => []]],
+        tags: ['orders'],
+        parameters: [
+            new OAT\Parameter(
+                name: 'id',
+                in: 'path',
+                required: true,
+            ),
+        ],
+        responses: [
+            new OAT\Response(
+                response: HttpResponse::HTTP_OK,
+                description: 'Ok',
+                content: new OAT\JsonContent(ref: '#/components/schemas/OrderResource'),
+            ),
+        ]
+    )]
+    public function read(int $id): JsonResponse
+    {
+        $order = $this->orderService->getSingle($id);
+
+        return Response::json(new OrderResource($order));
+    }
+
+    /**
+     * Update an Order.
+     *
+     * @param string $id
+     * @param CreateOrderRequest $request
+     * @return JsonResponse
+     */
+    #[OAT\Put(
+        path: '/api/orders/{id}',
+        operationId: 'OrderController.update',
+        summary: 'Update single order',
+        security: [['BearerToken' => []]],
+        requestBody: new OAT\RequestBody(
+            required: true,
+            content: new OAT\JsonContent(ref: '#/components/schemas/CreateOrderRequest')
+
+        ),
+        tags: ['orders'],
+        parameters: [
+            new OAT\Parameter(
+                name: 'id',
+                in: 'path',
+                required: true,
+            ),
+        ],
+        responses: [
+            new OAT\Response(
+                response: HttpResponse::HTTP_OK,
+                description: 'Ok',
+                content: new OAT\JsonContent(ref: '#/components/schemas/OrderResource'),
+            ),
+        ]
+    )]
+    public function update(string $id, CreateOrderRequest $request): JsonResponse
+    {
+        $order = $this->orderService->getSingle($id);
+
+        return Response::json(new OrderResource($this->orderService->update($order, $request)));
+
     }
 }
