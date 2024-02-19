@@ -3,49 +3,58 @@
 namespace App\Http\Controllers;
 
 use App\Http\Resources\UserResource;
-use App\Services\UserService;
+use App\Services\OrderService;
+use App\Http\Requests\Orders\CreateOrderRequest;
+use App\Http\Resources\OrderResource;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response as HttpResponse;
 use Illuminate\Support\Facades\Response;
 use OpenApi\Attributes as OAT;
 
-class ProfileController extends Controller
+class OrderController extends Controller
 {
     /**
      * Create a new controller instance.
      *
-     * @param  UserService  $authService
+     * @param  OrderService  $orderService
      * @return void
      */
-    public function __construct(private UserService $userService)
+    public function __construct(private OrderService $orderService)
     {
         //
     }
 
     /**
-     * Get the authenticated user.
+     * Create an Order.
      *
-     * @param  Request  $request
+     * @param  CreateOrderRequest  $request
      * @return JsonResponse
      */
-    #[OAT\Get(
-        path: '/api/profile',
-        operationId: 'ProfileController.me',
-        summary: 'me',
+    #[OAT\Post(
+        path: '/api/orders',
+        operationId: 'OrderController.create',
+        summary: 'Create order',
         security: [['BearerToken' => []]],
-        tags: ['profile'],
+        requestBody: new OAT\RequestBody(
+            required: true,
+            content: new OAT\JsonContent(ref: '#/components/schemas/CreateOrderRequest')
+
+        ),
+        tags: ['orders'],
         responses: [
             new OAT\Response(
                 response: HttpResponse::HTTP_OK,
                 description: 'Ok',
-                content: new OAT\JsonContent(ref: '#/components/schemas/UserResource')
+                content: new OAT\JsonContent(ref: '#/components/schemas/OrderResource')
             ),
         ]
     )]
-    public function me(Request $request): JsonResponse
+    public function create(CreateOrderRequest $request): JsonResponse
     {
-        return Response::json(new UserResource($request->user()));
+        $order = $this->orderService->createOrder($request);
+
+        return Response::json(new OrderResource($order));
     }
 
     /**

@@ -11,8 +11,8 @@ use OpenApi\Attributes as OAT;
 #[OAT\Schema(
     schema: 'LoggedInUserResource',
     properties: [
-        new OAT\Property(property: 'user', type: 'object', ref: '#/components/schemas/UserResource'),
-        new OAT\Property(property: 'token', type: 'object', ref: '#/components/schemas/AccessTokenResource'),
+        new OAT\Property(property: 'user', ref: '#/components/schemas/UserResource', type: 'object'),
+        new OAT\Property(property: 'token', ref: '#/components/schemas/AccessTokenResource', type: 'object'),
     ]
 )]
 class LoggedInUserResource extends JsonResource

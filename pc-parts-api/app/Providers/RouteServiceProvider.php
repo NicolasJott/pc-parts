@@ -57,6 +57,7 @@ class RouteServiceProvider extends ServiceProvider
             'middleware' => ['auth:user'],
         ], function () {
             require base_path('routes/api/profile.php');
+            require base_path('routes/api/orders.php');
         });
     }
 
@@ -79,6 +80,7 @@ class RouteServiceProvider extends ServiceProvider
             });
         });
     }
+
 
     /**
      * Configure the rate limiters for the application.

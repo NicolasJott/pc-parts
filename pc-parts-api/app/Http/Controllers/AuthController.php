@@ -35,15 +35,15 @@ class AuthController extends Controller
      * @return JsonResponse
      */
     #[OAT\Post(
-        tags: ['auth'],
         path: '/api/signup',
-        summary: 'Signup a user',
         operationId: 'AuthController.signup',
+        summary: 'Signup a user',
         requestBody: new OAT\RequestBody(
             required: true,
             content: new OAT\JsonContent(ref: '#/components/schemas/SignupRequest')
 
         ),
+        tags: ['auth'],
         responses: [
             new OAT\Response(
                 response: HttpResponse::HTTP_CREATED,
@@ -76,15 +76,15 @@ class AuthController extends Controller
      * @throws NotFoundHttpException
      */
     #[OAT\Post(
-        tags: ['auth'],
         path: '/api/login',
-        summary: 'Login a user',
         operationId: 'AuthController.login',
+        summary: 'Login a user',
         requestBody: new OAT\RequestBody(
             required: true,
             content: new OAT\JsonContent(ref: '#/components/schemas/LoginRequest')
 
         ),
+        tags: ['auth'],
         responses: [
             new OAT\Response(
                 response: HttpResponse::HTTP_OK,
@@ -125,11 +125,11 @@ class AuthController extends Controller
      * @return JsonResponse
      */
     #[OAT\Post(
-        tags: ['auth'],
         path: '/api/logout',
-        summary: 'Logout a user',
         operationId: 'AuthController.logout',
+        summary: 'Logout a user',
         security: [['BearerToken' => []]],
+        tags: ['auth'],
         responses: [
             new OAT\Response(
                 response: HttpResponse::HTTP_NO_CONTENT,

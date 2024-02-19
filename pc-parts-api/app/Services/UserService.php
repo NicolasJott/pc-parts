@@ -39,4 +39,15 @@ class UserService
     {
         return $this->userRepository->get(['email' => $email]);
     }
+
+    /**
+     * Delete a user
+     *
+     * @param User $user
+     * @return bool
+     */
+    public function delete(User $user): bool
+    {
+        return $this->userRepository->delete($user);
+    }
 }
