@@ -104,4 +104,16 @@ class OrderService
         return $this->getSingle($order->id);
 
     }
+
+
+    /**
+     * Delete single order
+     *
+     * @param Order $order
+     * @return bool
+     */
+    public function delete(Order $order): bool
+    {
+       return $this->orderRepository->delete($order);
+    }
 }

@@ -233,6 +233,23 @@ paths:
       security:
         -
           BearerToken: []
+    delete:
+      tags:
+        - orders
+      summary: 'Delete single order'
+      description: 'Delete an order.'
+      operationId: OrderController.delete
+      parameters:
+        -
+          name: id
+          in: path
+          required: true
+      responses:
+        '204':
+          description: 'No content'
+      security:
+        -
+          BearerToken: []
   /api/profile:
     get:
       tags:

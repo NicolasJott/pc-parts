@@ -158,4 +158,40 @@ class OrderController extends Controller
         return Response::json(new OrderResource($this->orderService->update($order, $request)));
 
     }
+
+    /**
+     * Delete an order.
+     *
+     * @param string $id
+     * @return JsonResponse
+     */
+    #[OAT\Delete(
+        path: '/api/orders/{id}',
+        operationId: 'OrderController.delete',
+        summary: 'Delete single order',
+        security: [['BearerToken' => []]],
+        tags: ['orders'],
+        parameters: [
+            new OAT\Parameter(
+                name: 'id',
+                in: 'path',
+                required: true,
+            ),
+        ],
+        responses: [
+            new OAT\Response(
+                response: HttpResponse::HTTP_NO_CONTENT,
+                description: 'No content'
+            ),
+        ]
+    )]
+    public function delete(string $id): JsonResponse
+    {
+        $order = $this->orderService->getSingle($id);
+
+        $this->orderService->delete($order);
+
+        return Response::json(null, HttpResponse::HTTP_NO_CONTENT);
+
+    }
 }

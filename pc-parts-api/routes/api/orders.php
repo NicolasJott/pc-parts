@@ -8,4 +8,5 @@ Route::group(['prefix' => 'orders'], function () {
     Route::get('/', [OrderController::class, 'readAll']);
     Route::get('/{id}', [OrderController::class, 'read']);
     Route::put('/{id}', [OrderController::class, 'update']);
+    Route::delete('/{id}', [OrderController::class, 'delete']);
 });
