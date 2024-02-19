@@ -58,28 +58,29 @@ class OrderController extends Controller
     }
 
     /**
-     * Delete the authenticated user.
+     * Create an Order.
      *
-     * @param Request $request
+     *
      * @return JsonResponse
      */
-    #[OAT\Delete(
-        path: '/api/profile',
-        operationId: 'ProfileController.delete',
-        summary: 'delete current user',
+    #[OAT\Get(
+        path: '/api/orders',
+        operationId: 'OrderController.readAll',
+        summary: 'Read all orders',
         security: [['BearerToken' => []]],
-        tags: ['profile'],
+        tags: ['orders'],
         responses: [
             new OAT\Response(
-                response: HttpResponse::HTTP_NO_CONTENT,
-                description: 'No content'
+                response: HttpResponse::HTTP_OK,
+                description: 'Ok',
+                content: new OAT\JsonContent(ref: '#/components/schemas/OrderResourceCollection'),
             ),
         ]
     )]
-    public function delete(Request $request): JsonResponse
+    public function readAll(): JsonResponse
     {
-        $this->userService->delete($request->user());
+        $orders = $this->orderService->readAllOrders();
 
-        return Response::json(null, HttpResponse::HTTP_NO_CONTENT);
+        return Response::json(OrderResource::collection($orders));
     }
 }

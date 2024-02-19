@@ -59,6 +59,13 @@ use OpenApi\Attributes as OAT;
         ),
     ]
 )]
+
+#[OAT\Schema(
+    schema: 'OrderResourceCollection',
+    type: 'array',
+    items: new OAT\Items(ref: '#/components/schemas/OrderResource')
+)]
+
 class OrderResource extends JsonResource
 {
     /**

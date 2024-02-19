@@ -48,4 +48,15 @@ class OrderService
         return $order;
     }
 
+     /**
+      * Read all orders.
+      *
+      * @return \Illuminate\Database\Eloquent\Collection
+      */
+     public function readAllOrders(): \Illuminate\Database\Eloquent\Collection
+     {
+         return $this->orderRepository->all();
+     }
+
+
 }
