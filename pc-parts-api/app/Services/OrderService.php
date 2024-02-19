@@ -38,11 +38,11 @@ class OrderService
 
         $this->deliveryAddressRepository->create([
             'order_id' => $order->id,
-            'address1' => $request['deliveryAddress']['address1'],
-            'address2' => $request['deliveryAddress']['address2'],
-            'city' => $request['deliveryAddress']['city'],
-            'state' => $request['deliveryAddress']['state'],
-            'zipCode' => $request['deliveryAddress']['zipCode'],
+            'address1' => $request->deliveryAddress['address1'],
+            'address2' => $request->deliveryAddress['address2'],
+            'city' => $request->deliveryAddress['city'],
+            'state' => $request->deliveryAddress['state'],
+            'zipCode' => $request->deliveryAddress['zipCode'],
         ]);
 
         return $order;
