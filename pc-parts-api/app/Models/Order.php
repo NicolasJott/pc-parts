@@ -26,4 +26,9 @@ class Order extends Model
     {
         return $this->hasOne(DeliveryAddress::class);
     }
+
+    public function lineItems()
+    {
+        return $this->hasMany(LineItem::class);
+    }
 }

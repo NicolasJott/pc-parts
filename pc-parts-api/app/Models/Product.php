@@ -28,5 +28,8 @@ class Product extends Model
         "specifications" => 'array'
     ];
 
-
+    public function line_items()
+    {
+        return $this->hasMany(LineItem::class);
+    }
 }
