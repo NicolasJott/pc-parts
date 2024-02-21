@@ -250,6 +250,44 @@ paths:
       security:
         -
           BearerToken: []
+  /api/products:
+    get:
+      tags:
+        - products
+      summary: 'Read all products'
+      operationId: ProductController.readAll
+      responses:
+        '200':
+          description: Ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProductResourceCollection'
+      security:
+        -
+          BearerToken: []
+  '/api/products/{category}':
+    get:
+      tags:
+        - products
+      summary: 'Read products by category'
+      description: 'Read by category'
+      operationId: ProductController.readByCategory
+      parameters:
+        -
+          name: category
+          in: path
+          required: true
+      responses:
+        '200':
+          description: Ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProductResourceCollection'
+      security:
+        -
+          BearerToken: []
   /api/profile:
     get:
       tags:
@@ -480,6 +518,43 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/OrderResource'
+    ProductResource:
+      properties:
+        id:
+          type: integer
+          example: 1
+        name:
+          type: string
+          example: 'AMD - Ryzen 7 7800X3D 8-Core - 16-Thread 4.2 GHz (5.0 GHz Max Boost) Socket AM5 Unlocked Desktop Processor - Black'
+        model:
+          type: string
+          example: 100-100000910WOF
+        price:
+          type: string
+          example: $369.00
+        category:
+          type: string
+          example: CPU
+        product_image:
+          type: string
+          example: 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6537/6537139cv11d.jpg;maxHeight=200;maxWidth=300'
+        description:
+          type: string
+          example: "AMD Ryzen 7 7800X3D The dominant gaming processor with AMD 3D V-Cache technology for even more game performance.  Whatever the setting, whatever the resolution, lead your team to victory with this incredible gaming processor.  Plus, enjoy the benefits of next-gen AMD 3D V-Cache technology for lower latency and even more game performance.\_"
+        specifications:
+          type: array
+          example:
+            - 'Socket AM5 (LGA 1718)'
+            - '4.2 gigahertz'
+            - '5 gigahertz'
+            - 8-core
+            - '16'
+            - 'Yes'
+      type: object
+    ProductResourceCollection:
+      type: array
+      items:
+        $ref: '#/components/schemas/ProductResource'
     UserResource:
       properties:
         id:
