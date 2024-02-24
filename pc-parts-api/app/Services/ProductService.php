@@ -35,4 +35,13 @@ class ProductService
     {
         return $this->productRepository->get(['category' => $category], false);
     }
+
+    /**
+     * @param int $id
+     * @return Product
+     */
+    public function getById(int $id): Product
+    {
+        return $this->productRepository->get(['id' => $id]);
+    }
 }

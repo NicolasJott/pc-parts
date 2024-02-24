@@ -45,6 +45,7 @@ class OrderResource extends JsonResource
             'phoneNumber' => $this->phoneNumber,
             'created_at' => $this->created_at,
             'deliveryAddress' => $this->deliveryAddress,
+            'lineItems' => $this->lineItems,
         ];
     }
 }

@@ -8,7 +8,7 @@ use OpenApi\Attributes as OAT;
 
 #[OAT\Schema(
     schema: 'CreateOrderRequest',
-    required: ['firstName', 'lastName', 'email', 'phoneNumber', 'deliveryAddress'],
+    required: ['firstName', 'lastName', 'email', 'phoneNumber', 'deliveryAddress', 'products'],
     properties: [
         new OAT\Property(
             property: 'firstName',
@@ -34,7 +34,21 @@ use OpenApi\Attributes as OAT;
         new OAT\Property(
             property: 'products',
             type: 'array',
-            example: [1, 2]
+            items: new OAT\Items(
+                type: 'object',
+                properties: [
+                    new OAT\Property(
+                        property: 'id',
+                        type: 'integer',
+                        example: 1
+                    ),
+                    new OAT\Property(
+                        property: 'quantity',
+                        type: 'integer',
+                        example: 1
+                    ),
+                ]
+            )
         ),
         new OAT\Property(
             property: 'deliveryAddress',
@@ -122,7 +136,9 @@ class CreateOrderRequest extends FormRequest
             'products' => [
                 'required',
                 'array',
-            ]
+            ],
+            'products.*.id' => 'required|integer|exists:products,id', // Assuming you have a 'products' table
+            'products.*.quantity' => 'required|integer|min:1',
         ];
     }
 }

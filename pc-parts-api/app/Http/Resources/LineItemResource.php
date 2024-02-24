@@ -25,7 +25,16 @@ use OpenApi\Attributes as OAT;
             type: 'integer',
             example: 1,
         ),
-        new OAT\Property(property: 'product', type: 'object', ref: '#/components/schemas/ProductResource'),
+        new OAT\Property(
+            property: 'quantity',
+            type: 'integer',
+            example: 1,
+        ),
+        new OAT\Property(
+            property: 'price',
+            type: 'number',
+            example: 100.00,
+        ),
 
     ]
 )]
@@ -46,10 +55,13 @@ class LineItemResource extends JsonResource
      */
     public function toArray($request): array|Arrayable|JsonSerializable
     {
+
         return [
             'id' => $this->id,
             'order_id' => $this->order_id,
             'product_id' => $this->product_id,
+            'quantity' => $this->quantity,
+            'price' => $this->price,
         ];
     }
 }

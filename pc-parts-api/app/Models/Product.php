@@ -28,7 +28,7 @@ class Product extends Model
         "specifications" => 'array'
     ];
 
-    public function line_items()
+    public function lineItems()
     {
         return $this->hasMany(LineItem::class);
     }

@@ -392,6 +392,7 @@ components:
         - email
         - phoneNumber
         - deliveryAddress
+        - products
       properties:
         firstName:
           type: string
@@ -408,9 +409,15 @@ components:
           example: 123-456-7890
         products:
           type: array
-          example:
-            - 1
-            - 2
+          items:
+            properties:
+              id:
+                type: integer
+                example: 1
+              quantity:
+                type: integer
+                example: 1
+            type: object
         deliveryAddress:
           properties:
             address1:
@@ -494,8 +501,13 @@ components:
         product_id:
           type: integer
           example: 1
-        product:
-          $ref: '#/components/schemas/ProductResource'
+        quantity:
+          type: integer
+          example: 1
+        price:
+          type: number
+          format: float
+          example: 100
       type: object
     LineItemResourceCollection:
       type: array

@@ -18,7 +18,7 @@ class OrderService
      * @param LineItemRepository $lineItemRepository
      * @return void
      */
-    public function __construct(private OrderRepository $orderRepository, private DeliveryAddressRepository $deliveryAddressRepository, private LineItemRepository $lineItemRepository)
+    public function __construct(private OrderRepository $orderRepository, private DeliveryAddressRepository $deliveryAddressRepository, private LineItemRepository $lineItemRepository, private ProductService $productService)
     {
         //
     }
@@ -48,10 +48,16 @@ class OrderService
         ]);
 
 
-        foreach ($request->products as $product) {
+        foreach ($request->products as $item) {
+            $product = $this->productService->getById($item['id']);
+            $formattedPrice = str_replace('$', '', $product->price);
+
+
             $this->lineItemRepository->create([
                 'order_id' => $order->id,
-                'product_id' => $product,
+                'product_id' => $product->id,
+                'quantity' => $item['quantity'],
+                'price' => $formattedPrice,
             ]);
         }
 
