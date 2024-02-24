@@ -32,6 +32,11 @@ use OpenApi\Attributes as OAT;
             example: '123-456-7890'
         ),
         new OAT\Property(
+            property: 'products',
+            type: 'array',
+            example: [1, 2]
+        ),
+        new OAT\Property(
             property: 'deliveryAddress',
             properties: [
                 new OAT\Property(
@@ -114,6 +119,10 @@ class CreateOrderRequest extends FormRequest
                 'required',
                 'integer',
             ],
+            'products' => [
+                'required',
+                'array',
+            ]
         ];
     }
 }

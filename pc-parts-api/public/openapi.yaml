@@ -406,6 +406,11 @@ components:
         phoneNumber:
           type: string
           example: 123-456-7890
+        products:
+          type: array
+          example:
+            - 1
+            - 2
         deliveryAddress:
           properties:
             address1:
@@ -454,6 +459,48 @@ components:
           format: date-time
           example: '2022-08-27T16:14:46.000000Z'
       type: object
+    DeliveryAddressResource:
+      properties:
+        id:
+          type: integer
+          example: 1
+        order_id:
+          type: integer
+          example: 1
+        address1:
+          type: string
+          example: '123 Easy Street'
+        address2:
+          type: string
+          example: 'Apt. 309'
+        city:
+          type: string
+          example: Youngstown
+        state:
+          type: string
+          example: OH
+        zipCode:
+          type: integer
+          example: 123456
+      type: object
+    LineItemResource:
+      properties:
+        id:
+          type: integer
+          example: 1
+        order_id:
+          type: integer
+          example: 1
+        product_id:
+          type: integer
+          example: 1
+        product:
+          $ref: '#/components/schemas/ProductResource'
+      type: object
+    LineItemResourceCollection:
+      type: array
+      items:
+        $ref: '#/components/schemas/LineItemResource'
     LoggedInAdminResource:
       properties:
         admin:
@@ -490,29 +537,9 @@ components:
           format: date-time
           example: '2022-08-27T16:14:46.000000Z'
         deliveryAddress:
-          properties:
-            id:
-              type: integer
-              example: 1
-            order_id:
-              type: integer
-              example: 1
-            address1:
-              type: string
-              example: '123 Easy Street'
-            address2:
-              type: string
-              example: 'Apt. 309'
-            city:
-              type: string
-              example: Youngstown
-            state:
-              type: string
-              example: OH
-            zipCode:
-              type: integer
-              example: 123456
-          type: object
+          $ref: '#/components/schemas/DeliveryAddressResource'
+        lineItems:
+          $ref: '#/components/schemas/LineItemResourceCollection'
       type: object
     OrderResourceCollection:
       type: array

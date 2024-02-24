@@ -16,47 +16,8 @@ use OpenApi\Attributes as OAT;
         new OAT\Property(property: 'email', type: 'string', example: 'john@example.com'),
         new OAT\Property(property: 'phoneNumber', type: 'string', example: '123-456-7890'),
         new OAT\Property(property: 'created_at', type: 'datetime', example: '2022-08-27T16:14:46.000000Z'),
-        new OAT\Property(
-            property: 'deliveryAddress',
-            properties: [
-                new OAT\Property(
-                    property: 'id',
-                    type: 'integer',
-                    example: 1
-                ),
-                new OAT\Property(
-                    property: 'order_id',
-                    type: 'integer',
-                    example: 1
-                ),
-                new OAT\Property(
-                    property: 'address1',
-                    type: 'string',
-                    example: '123 Easy Street'
-                ),
-                new OAT\Property(
-                    property: 'address2',
-                    type: 'string',
-                    example: 'Apt. 309'
-                ),
-                new OAT\Property(
-                    property: 'city',
-                    type: 'string',
-                    example: 'Youngstown'
-                ),
-                new OAT\Property(
-                    property: 'state',
-                    type: 'string',
-                    example: 'OH'
-                ),
-                new OAT\Property(
-                    property: 'zipCode',
-                    type: 'integer',
-                    example: 123456,
-                ),
-            ],
-            type: 'object',
-        ),
+        new OAT\Property(property: 'deliveryAddress', type: 'object', ref: '#/components/schemas/DeliveryAddressResource'),
+        new OAT\Property(property: 'lineItems', ref: '#/components/schemas/LineItemResourceCollection'),
     ]
 )]
 

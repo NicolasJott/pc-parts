@@ -5,6 +5,7 @@ namespace App\Services;
 use App\Models\Order;
 use App\Repositories\OrderRepository;
 use App\Repositories\DeliveryAddressRepository;
+use App\Repositories\LineItemRepository;
 use App\Http\Requests\Orders\CreateOrderRequest;
 
 class OrderService
@@ -14,9 +15,10 @@ class OrderService
      *
      * @param OrderRepository $orderRepository
      * @param DeliveryAddressRepository $deliveryAddressRepository
+     * @param LineItemRepository $lineItemRepository
      * @return void
      */
-    public function __construct(private OrderRepository $orderRepository, private DeliveryAddressRepository $deliveryAddressRepository)
+    public function __construct(private OrderRepository $orderRepository, private DeliveryAddressRepository $deliveryAddressRepository, private LineItemRepository $lineItemRepository)
     {
         //
     }
@@ -45,18 +47,27 @@ class OrderService
             'zipCode' => $request->deliveryAddress['zipCode'],
         ]);
 
+
+        foreach ($request->products as $product) {
+            $this->lineItemRepository->create([
+                'order_id' => $order->id,
+                'product_id' => $product,
+            ]);
+        }
+
+
         return $order;
     }
 
-     /**
-      * Read all orders.
-      *
-      * @return \Illuminate\Database\Eloquent\Collection
-      */
-     public function readAllOrders(): \Illuminate\Database\Eloquent\Collection
-     {
-         return $this->orderRepository->all();
-     }
+    /**
+     * Read all orders.
+     *
+     * @return \Illuminate\Database\Eloquent\Collection
+     */
+    public function readAllOrders(): \Illuminate\Database\Eloquent\Collection
+    {
+        return $this->orderRepository->all();
+    }
 
     /**
      * Get single order.
@@ -69,7 +80,7 @@ class OrderService
         $order = $this->orderRepository->get(['id' => $id]);
 
         if (!$order) {
-            return abort(404, "Order with this id does not exist." );
+            return abort(404, "Order with this id does not exist.");
         }
 
         return $this->orderRepository->get(['id' => $id]);
@@ -114,6 +125,6 @@ class OrderService
      */
     public function delete(Order $order): bool
     {
-       return $this->orderRepository->delete($order);
+        return $this->orderRepository->delete($order);
     }
 }
