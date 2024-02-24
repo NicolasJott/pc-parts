@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Resources\UserResource;
+use App\Http\Resources\OrderResource;
+use App\Services\OrderService;
 use App\Services\UserService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -16,9 +18,10 @@ class ProfileController extends Controller
      * Create a new controller instance.
      *
      * @param  UserService  $authService
+     * @param  OrderService  $orderService
      * @return void
      */
-    public function __construct(private UserService $userService)
+    public function __construct(private UserService $userService, private OrderService $orderService)
     {
         //
     }
@@ -46,6 +49,33 @@ class ProfileController extends Controller
     public function me(Request $request): JsonResponse
     {
         return Response::json(new UserResource($request->user()));
+    }
+
+    /**
+     * Get the authenticated user's orders.
+     *
+     * @param  Request  $request
+     * @return JsonResponse
+     */
+    #[OAT\Get(
+        path: '/api/profile/orders',
+        operationId: 'ProfileController.myOrders',
+        summary: 'my orders',
+        security: [['BearerToken' => []]],
+        tags: ['profile'],
+        responses: [
+            new OAT\Response(
+                response: HttpResponse::HTTP_OK,
+                description: 'Ok',
+                content: new OAT\JsonContent(ref: '#/components/schemas/OrderResourceCollection'),
+            ),
+        ]
+    )]
+    public function myOrders(Request $request): JsonResponse
+    {
+
+        $orders = $this->orderService->getOrdersForUser($request->user());
+        return Response::json(OrderResource::collection($orders));
     }
 
     /**

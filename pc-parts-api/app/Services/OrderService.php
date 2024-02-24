@@ -3,6 +3,7 @@
 namespace App\Services;
 
 use App\Models\Order;
+use App\Models\User;
 use App\Repositories\OrderRepository;
 use App\Repositories\DeliveryAddressRepository;
 use App\Repositories\LineItemRepository;
@@ -132,5 +133,22 @@ class OrderService
     public function delete(Order $order): bool
     {
         return $this->orderRepository->delete($order);
+    }
+
+    /**
+     * Get all orders for a user
+     *
+     * @param User $user
+     * @return \Illuminate\Database\Eloquent\Collection
+     */
+    public function getOrdersForUser(User $user): \Illuminate\Database\Eloquent\Collection
+    {
+        $orders = $this->orderRepository->get(['email' => $user->email], false);
+
+        if (!$orders) {
+            return collect([]);
+        }
+
+        return $orders;
     }
 }
