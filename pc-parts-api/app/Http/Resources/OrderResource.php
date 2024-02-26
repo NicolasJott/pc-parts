@@ -16,7 +16,7 @@ use OpenApi\Attributes as OAT;
         new OAT\Property(property: 'email', type: 'string', example: 'john@example.com'),
         new OAT\Property(property: 'phoneNumber', type: 'string', example: '123-456-7890'),
         new OAT\Property(property: 'created_at', type: 'datetime', example: '2022-08-27T16:14:46.000000Z'),
-        new OAT\Property(property: 'deliveryAddress', type: 'object', ref: '#/components/schemas/DeliveryAddressResource'),
+        new OAT\Property(property: 'deliveryAddress', ref: '#/components/schemas/DeliveryAddressResource', type: 'object'),
         new OAT\Property(property: 'lineItems', ref: '#/components/schemas/LineItemResourceCollection'),
     ]
 )]
@@ -37,6 +37,7 @@ class OrderResource extends JsonResource
      */
     public function toArray($request): array|Arrayable|JsonSerializable
     {
+
         return [
             'id' => $this->id,
             'firstName' => $this->firstName,
@@ -44,8 +45,8 @@ class OrderResource extends JsonResource
             'email' => $this->email,
             'phoneNumber' => $this->phoneNumber,
             'created_at' => $this->created_at,
-            'deliveryAddress' => $this->deliveryAddress,
-            'lineItems' => $this->lineItems,
+            'deliveryAddress' => new DeliveryAddressResource($this->deliveryAddress),
+            'lineItems' => LineItemResource::collection($this->lineItems),
         ];
     }
 }

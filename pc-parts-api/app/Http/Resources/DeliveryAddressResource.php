@@ -59,8 +59,6 @@ class DeliveryAddressResource extends JsonResource
     public function toArray($request): array|Arrayable|JsonSerializable
     {
         return [
-            'id' => $this->id,
-            'order_id' => $this->order_id,
             'address1' => $this->address1,
             'address2' => $this->address2,
             'city' => $this->city,

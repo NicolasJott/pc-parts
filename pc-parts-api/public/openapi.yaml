@@ -512,18 +512,14 @@ components:
         id:
           type: integer
           example: 1
-        order_id:
-          type: integer
-          example: 1
-        product_id:
-          type: integer
-          example: 1
         quantity:
           type: integer
           example: 1
         price:
           type: number
           example: 100
+        product:
+          $ref: '#/components/schemas/ProductResource'
       type: object
     LineItemResourceCollection:
       type: array
