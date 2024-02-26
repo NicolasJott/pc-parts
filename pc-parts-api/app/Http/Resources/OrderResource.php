@@ -45,8 +45,8 @@ class OrderResource extends JsonResource
             'email' => $this->email,
             'phoneNumber' => $this->phoneNumber,
             'created_at' => $this->created_at,
-            'deliveryAddress' => new DeliveryAddressResource($this->deliveryAddress),
-            'lineItems' => LineItemResource::collection($this->lineItems),
+            'delivery_address' => new DeliveryAddressResource($this->deliveryAddress),
+            'line_items' => LineItemResource::collection($this->lineItems),
         ];
     }
 }
