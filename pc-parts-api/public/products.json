@@ -2,7 +2,7 @@
     {
         "name": "GIGABYTE - NVIDIA GeForce RTX 4070 SUPER Windforce OC 12GB GDDR6X PCI Express 4.0 Graphics Card - Black",
         "model": "6572362",
-        "price": "$599.99",
+        "price": 599.99,
         "category": "GPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6572/6572362_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -18,7 +18,7 @@
     {
         "name": "XFX - Speedster SWFT309 AMD Radeon RX 6700XT 12GB GDDR6 PCI Express 4.0 Gaming Graphics Card - Black",
         "model": "6513905",
-        "price": "$349.99",
+        "price": 349.99,
         "category": "GPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6513/6513905_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -34,7 +34,7 @@
     {
         "name": "MSI - NVIDIA RTX 3050 VENTUS 2X XS 8G OC - 8GB GDDR6 - PCI Express 4.0 - Graphics Card - Black",
         "model": "6560971",
-        "price": "$219.99",
+        "price": 219.99,
         "category": "GPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6560/6560971_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -50,7 +50,7 @@
     {
         "name": "GIGABYTE - NVIDIA GeForce RTX 4070 WINDFORCE OC 12G GDDR6X PCI Express 4.0 Graphics Card - Black",
         "model": "6539986",
-        "price": "$549.99",
+        "price": 549.99,
         "category": "GPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6539/6539986_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -66,7 +66,7 @@
     {
         "name": "ASUS - NVIDIA GeForce RTX 4070 Overclock 12GB GDDR6X PCI Express 4.0 Graphics Card - Black",
         "model": "6540001",
-        "price": "$559.99",
+        "price": 559.99,
         "category": "GPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6540/6540001_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -82,7 +82,7 @@
     {
         "name": "ASUS - NVIDIA GeForce RTX 3060 Dual Overclock 12GB GDDR6 PCI Express 4.0 Graphics Card - Black",
         "model": "6557544",
-        "price": "$299.99",
+        "price": 299.99,
         "category": "GPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6557/6557544_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -98,7 +98,7 @@
     {
         "name": "XFX - SPEEDSTER SWFT210 AMD Radeon RX 6650XT Core 8GB GDDR6 PCI Express 4.0 Gaming Graphics Card - Black",
         "model": "6513906",
-        "price": "$249.99",
+        "price": 249.99,
         "category": "GPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6513/6513906_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -114,7 +114,7 @@
     {
         "name": "GIGABYTE - NVIDIA GeForce RTX 4060 WINDFORCE OC 8GB GDDR6 PCI Express 4.0 Graphics Card - Black",
         "model": "6548535",
-        "price": "$299.99",
+        "price": 299.99,
         "category": "GPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6548/6548535_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -130,7 +130,7 @@
     {
         "name": "MSI - NVIDIA GeForce RTX 4060 Ti 8GB VENTUS 3X OC 8GB GDDR6 PCI Express 4.0 Graphics Card - Black",
         "model": "6545380",
-        "price": "$394.99",
+        "price": 394.99,
         "category": "GPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6545/6545380_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -146,7 +146,7 @@
     {
         "name": "XFX - Speedster SWFT309 AMD Radeon RX 6700 10GB GDDR6 PCI Express 4.0 Gaming Graphics Card - Black",
         "model": "6523730",
-        "price": "$269.99",
+        "price": 269.99,
         "category": "GPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6523/6523730_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -162,7 +162,7 @@
     {
         "name": "XFX - AMD Radeon RX 580 GTS XXX Edition 8GB GDDR5 PCI Express 3.0 Graphics Card - Black",
         "model": "6136515",
-        "price": "$139.99",
+        "price": 139.99,
         "category": "GPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6136/6136515_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -178,7 +178,7 @@
     {
         "name": "XFX - Speedster SWFT319 AMD Radeon RX 6800 16GB GDDR6 PCI Express 4.0 Gaming Graphics Card",
         "model": "6559272",
-        "price": "$429.99",
+        "price": 429.99,
         "category": "GPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6559/6559272_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -194,7 +194,7 @@
     {
         "name": "GIGABYTE - NVIDIA GeForce RTX 4070 Ti SUPER Gaming OC 16GB GDDR6X PCI Express 4.0 Graphics Card - Black",
         "model": "6572437",
-        "price": "$849.99",
+        "price": 849.99,
         "category": "GPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6572/6572437_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -210,7 +210,7 @@
     {
         "name": "New!XFX - SPEEDSTER SWFT210 AMD Radeon RX 7600XT 16GB GDDR6 PCI Express 4.0 Graphics Card - Black",
         "model": "6573491",
-        "price": "$349.99",
+        "price": 349.99,
         "category": "GPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6573/6573491_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -226,7 +226,7 @@
     {
         "name": "XFX - Speedster MERC310 AMD Radeon RX 7900XT 20GB GDDR6 PCI Express 4.0 Gaming Graphics Card - Black",
         "model": "6562528",
-        "price": "$749.99",
+        "price": 749.99,
         "category": "GPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6562/6562528_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -242,7 +242,7 @@
     {
         "name": "ASUS - NVIDIA GeForce RTX 4060 Ti TUF 8GB GDDR6 PCI Express 4.0 Graphics Card - Black",
         "model": "6545278",
-        "price": "$439.99",
+        "price": 439.99,
         "category": "GPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6545/6545278_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -258,7 +258,7 @@
     {
         "name": "XFX - SPEEDSTER MERC319 AMD Radeon RX 7800XT BLACK 16GB GDDR6 PCI Express 4.0 Graphics Card - Black",
         "model": "6561517",
-        "price": "$519.99",
+        "price": 519.99,
         "category": "GPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6561/6561517_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -274,7 +274,7 @@
     {
         "name": "GIGABYTE - NVIDIA GeForce RTX 3060 12GB GDDR6 PCI Express 4.0 Graphics Card - Black",
         "model": "6468931",
-        "price": "$349.99",
+        "price": 349.99,
         "category": "GPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6468/6468931_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -290,7 +290,7 @@
     {
         "name": "ASUS - NVIDIA GeForce RTX 4060 Ti Dual Overclock 8GB GDDR6 PCI Express 4.0 Graphics Card - Black",
         "model": "6545279",
-        "price": "$399.99",
+        "price": 399.99,
         "category": "GPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6545/6545279_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -306,7 +306,7 @@
     {
         "name": "MSI - NVIDIA GeForce RTX 4070 TI SUPER 16GB VENTUS 3X OC 16GB GDDR6X PCI Express 4.0 Graphics Card - Black",
         "model": "6571811",
-        "price": "$829.99",
+        "price": 829.99,
         "category": "GPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6571/6571811_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -322,7 +322,7 @@
     {
         "name": "AMD - Ryzen 7 7800X3D 8-Core - 16-Thread 4.2 GHz (5.0 GHz Max Boost) Socket AM5 Unlocked Desktop Processor - Black",
         "model": "100-100000910WOF",
-        "price": "$369.00",
+        "price": 369.0,
         "category": "CPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6537/6537139cv11d.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -338,7 +338,7 @@
     {
         "name": "Intel - Core i7-12700K Desktop Processor 12 (8P+4E) Cores up to 5.0 GHz Unlocked  LGA1700 600 Series Chipset 125W - Grey/Black/Gold",
         "model": "BX8071512700K",
-        "price": "$249.99",
+        "price": 249.99,
         "category": "CPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6483/6483672_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -354,7 +354,7 @@
     {
         "name": "Intel - Core i7-14700K 14th Gen 20-Core 28-Thread - 4.3GHz (5.6GHz Turbo) Socket LGA 1700 Unlocked Desktop Processor - Multi",
         "model": "BX8071514700K",
-        "price": "$399.99",
+        "price": 399.99,
         "category": "CPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6560/6560420_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -370,7 +370,7 @@
     {
         "name": "Intel - Core i5-13600K 13th Gen 14 cores 6 P-cores + 8 E-cores 24M Cache, 3.5 to 5.1 GHz LGA1700 Unlocked Desktop Processor - Grey/Black/Gold",
         "model": "BX8071513600K",
-        "price": "$297.99",
+        "price": 297.99,
         "category": "CPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6521/6521196_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -386,7 +386,7 @@
     {
         "name": "Intel - Core i5-12400F 12th Generation - 6 Core - 12 Thread - 2.5 to 4.4 GHz - LGA1700 - Desktop Processor - Grey/Black/Gold",
         "model": "BX8071512400F",
-        "price": "$156.99",
+        "price": 156.99,
         "category": "CPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6492/6492588_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -402,7 +402,7 @@
     {
         "name": "New!AMD - Ryzen 5 5600GT 6-core - 12-thread \u2013 3.6 GHz (4.6 GHz Max Boost) Socket AM4 Unlocked Desktop Processor",
         "model": "100-100001488BOX",
-        "price": "$140.00",
+        "price": 140.0,
         "category": "CPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6573/6573563_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -418,7 +418,7 @@
     {
         "name": "Intel - Core i9-14900K 14th Gen 24-Core 32-Thread - 4.4GHz (6.0GHz Turbo) Socket LGA 1700 Unlocked Desktop Processor - Multi",
         "model": "BX8071514900K",
-        "price": "$544.99",
+        "price": 544.99,
         "category": "CPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6560/6560418_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -434,7 +434,7 @@
     {
         "name": "AMD - Ryzen 9 5900X 4th Gen 12-core, 24-threads Unlocked Desktop Processor Without Cooler - Black",
         "model": "100-100000061WOF",
-        "price": "$299.00",
+        "price": 299.0,
         "category": "CPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6438/6438942cv11d.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -450,7 +450,7 @@
     {
         "name": "AMD - Ryzen 7 5800X 4th Gen 8-core, 16-threads Unlocked Desktop Processor Without Cooler - Black",
         "model": "100-100000063WOF",
-        "price": "$239.00",
+        "price": 239.0,
         "category": "CPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6439/6439000_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -466,7 +466,7 @@
     {
         "name": "AMD - Ryzen 5 5600X 4th Gen 6-core, 12-threads Unlocked Desktop Processor With Wraith Stealth Cooler - Black",
         "model": "100-100000065BOX",
-        "price": "$159.00",
+        "price": 159.0,
         "category": "CPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6438/6438943_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -482,7 +482,7 @@
     {
         "name": "AMD - Ryzen 9 7950X 16-core - 32-Thread 4.5GHz (5.7 GHz Max Boost) Socket AM5 Desktop Processor - Silver",
         "model": "100-100000514WOF",
-        "price": "$549.99",
+        "price": 549.99,
         "category": "CPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6519/6519470cv11d.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -498,7 +498,7 @@
     {
         "name": "Intel - Core i9-13900K 13th Gen 24 cores 8 P-cores + 16 E-cores 36M Cache, 3 to 5.8 GHz LGA1700 Unlocked Desktop Processor - Grey/Black/Gold",
         "model": "BX8071513900K",
-        "price": "$524.99",
+        "price": 524.99,
         "category": "CPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6521/6521190_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -514,7 +514,7 @@
     {
         "name": "Intel - Core i7-13700K 13th Gen 16 cores 8 P-cores + 8 E-cores 30M Cache, 3.4 to 5.4 GHz LGA1700 Unlocked Desktop Processor - Grey/Black/Gold",
         "model": "BX8071513700K",
-        "price": "$370.99",
+        "price": 370.99,
         "category": "CPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6521/6521194_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -530,7 +530,7 @@
     {
         "name": "AMD - Ryzen 7 5800X3D 3.4 GHz Eight-Core AM4 Processor - Black",
         "model": "100-100000651WOF",
-        "price": "$359.00",
+        "price": 359.0,
         "category": "CPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510767_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -546,7 +546,7 @@
     {
         "name": "AMD - Ryzen 5 7600 6-core - 12-Thread 4.0 GHz (5.2 GHz Max Boost) Socket AM5 Unlocked Desktop Processor - Silver",
         "model": "100-100001015BOX",
-        "price": "$229.00",
+        "price": 229.0,
         "category": "CPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6530/6530445cv11d.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -562,7 +562,7 @@
     {
         "name": "Intel - Core i5-12600K Desktop Processor 10 (6P+4E) Cores up to 4.9 GHz Unlocked  LGA1700 600 Series Chipset 125W - Grey/Black/Gold",
         "model": "BX8071512600K",
-        "price": "$178.99",
+        "price": 178.99,
         "category": "CPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6483/6483676_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -578,7 +578,7 @@
     {
         "name": "AMD - Ryzen 7 7700X 8-core - 16-Thread 4.5GHz (5.4 GHz Max Boost) Socket AM5 Desktop Processor - Silver",
         "model": "100-100000591WOF",
-        "price": "$329.99",
+        "price": 329.99,
         "category": "CPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6519/6519477cv11d.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -594,7 +594,7 @@
     {
         "name": "AMD - Ryzen 5 5500 3.6 GHz Six-Core AM4 Processor - Black",
         "model": "100-100000457BOX",
-        "price": "$99.00",
+        "price": 99.0,
         "category": "CPU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510779cv1d.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -610,7 +610,7 @@
     {
         "name": "CORSAIR - 4000D AIRFLOW ATX MidTower Case - Black",
         "model": "CC-9011200-WW",
-        "price": "$89.99",
+        "price": 89.99,
         "category": "Cases",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6424/6424213_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -625,7 +625,7 @@
     {
         "name": "NZXT - H7 Flow ATX Mid-Tower Case - Black",
         "model": "CM-H71FB-01",
-        "price": "$129.99",
+        "price": 129.99,
         "category": "Cases",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6507/6507395_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -639,7 +639,7 @@
     {
         "name": "MSI - MPG VELOX 100R ATX Mid-Tower Case - Black",
         "model": "MPG VELOX 100R",
-        "price": "$119.99",
+        "price": 119.99,
         "category": "Cases",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6506/6506729_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -653,7 +653,7 @@
     {
         "name": "NZXT - H9 Flow ATX Mid-Tower Case with Dual Chamber - White",
         "model": "CM-H91FW-01",
-        "price": "$154.99",
+        "price": 154.99,
         "category": "Cases",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6529/6529623_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -667,7 +667,7 @@
     {
         "name": "CORSAIR - iCUE 5000D RGB AIRFLOW ATX Mid-Tower Case - Black",
         "model": "CC-9011242-WW",
-        "price": "$184.99",
+        "price": 184.99,
         "category": "Cases",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6530/6530796_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -681,7 +681,7 @@
     {
         "name": "CORSAIR - iCUE 7000X RGB ATX/Mini ITX/Micro ATX/EATX Full-tower Case - Black",
         "model": "CC-9011226-WW",
-        "price": "$289.99",
+        "price": 289.99,
         "category": "Cases",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6469/6469137_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -696,7 +696,7 @@
     {
         "name": "CORSAIR - iCUE 4000D RGB AIRFLOW ATX Mid-Tower Case - Black",
         "model": "CC-9011240-WW",
-        "price": "$129.99",
+        "price": 129.99,
         "category": "Cases",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6530/6530795_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -710,7 +710,7 @@
     {
         "name": "NZXT - H5 Flow ATX Mid-Tower Case - Black",
         "model": "CC-H51FB-01",
-        "price": "$94.99",
+        "price": 94.99,
         "category": "Cases",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6522/6522038_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -724,7 +724,7 @@
     {
         "name": "CORSAIR - 5000D AIRFLOW ATX Mid-Tower - Black",
         "model": "CC-9011210-WW",
-        "price": "$149.99",
+        "price": 149.99,
         "category": "Cases",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6453/6453227_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -739,7 +739,7 @@
     {
         "name": "CORSAIR - iCUE 5000D RGB AIRFLOW ATX Mid-Tower Case - True White",
         "model": "CC-9011243-WW",
-        "price": "$184.99",
+        "price": 184.99,
         "category": "Cases",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6530/6530798_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -753,7 +753,7 @@
     {
         "name": "HYTE - Y60 ATX Computer Case - Black",
         "model": "CS-HYTE-Y60-B",
-        "price": "$179.99",
+        "price": 179.99,
         "category": "Cases",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6523/6523830_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -767,7 +767,7 @@
     {
         "name": "NZXT - H6 Flow ATX Mid-Tower Case with Dual Chamber - Black",
         "model": "CC-H61FB-01",
-        "price": "$109.99",
+        "price": 109.99,
         "category": "Cases",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6560/6560305_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -781,7 +781,7 @@
     {
         "name": "NZXT - H5 Elite ATX Mid-Tower Case - Black",
         "model": "CC-H51EB-01",
-        "price": "$139.99",
+        "price": 139.99,
         "category": "Cases",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6522/6522036_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -795,7 +795,7 @@
     {
         "name": "CORSAIR - 2000D AIRFLOW Mini-ITX Case - Black",
         "model": "CC-9011244-WW",
-        "price": "$104.99",
+        "price": 104.99,
         "category": "Cases",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6547/6547705_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -808,7 +808,7 @@
     {
         "name": "NZXT - H6 Flow RGB ATX Mid-Tower Case with Dual Chamber - White",
         "model": "CC-H61FW-R1",
-        "price": "$124.99",
+        "price": 124.99,
         "category": "Cases",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6560/6560309_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -822,7 +822,7 @@
     {
         "name": "NZXT - H9 Elite ATX Mid-Tower Case with Dual Chamber - Black",
         "model": "CM-H91EB-01",
-        "price": "$239.99",
+        "price": 239.99,
         "category": "Cases",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6529/6529622_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -836,7 +836,7 @@
     {
         "name": "Thermaltake - CTE C750 TG ARGB ATX Full Tower Case - Black",
         "model": "CA-1X6-00F1WN-01",
-        "price": "$199.99",
+        "price": 199.99,
         "category": "Cases",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6566/6566250_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -850,7 +850,7 @@
     {
         "name": "Thermaltake - Versa H18 TG Mid Tower Case - Black, Blue",
         "model": "CA-1J4-00S1WN-01",
-        "price": "$54.99",
+        "price": 54.99,
         "category": "Cases",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6353/6353116_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -864,7 +864,7 @@
     {
         "name": "CORSAIR - iCUE H100i ELITE CAPELLIX XT 120mm Fans + 240mm Radiator Liquid Cooling System with ultra-bright CAPELLIX RGB LEDs - Black",
         "model": "CW-9060068-WW",
-        "price": "$154.99",
+        "price": 154.99,
         "category": "Cooling",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6534/6534179_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -878,7 +878,7 @@
     {
         "name": "CORSAIR - LL Series RGB 120mm Computer Case Fan Kit with RGB Lighting Controller (3-pack) - Black",
         "model": "CO-9050072-WW",
-        "price": "$69.99",
+        "price": 69.99,
         "category": "Cooling",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6181/6181283_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -892,7 +892,7 @@
     {
         "name": "Cooler Master - Hyper 212 Halo 120mm CPU Cooling Fan with Gen 2 RGB Lighting - Black Edition",
         "model": "RR-S4KK-20PA-R1",
-        "price": "$34.99",
+        "price": 34.99,
         "category": "Cooling",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6541/6541734_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -906,7 +906,7 @@
     {
         "name": "CORSAIR - iCUE H150i ELITE LCD XT 120mm Fans + 360mm Radiator Liquid Cooling System with IPS LCD Screen - Black",
         "model": "CW-9060075-WW",
-        "price": "$249.99",
+        "price": 249.99,
         "category": "Cooling",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6534/6534171_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -920,7 +920,7 @@
     {
         "name": "CORSAIR - iCUE H150i ELITE CAPELLIX XT 120mm Fans + 360mm Radiator Liquid Cooling System with ultra-bright CAPELLIX RGB LEDs - Black",
         "model": "CW-9060070-WW",
-        "price": "$189.99",
+        "price": 189.99,
         "category": "Cooling",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6534/6534177_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -934,7 +934,7 @@
     {
         "name": "NZXT - Kraken Elite 360 - 120mm Fans + AIO 360mm Radiator Liquid Cooling System with 2.36\" wide-angle LCD display and F  Fans - Black",
         "model": "RL-KN36E-B1",
-        "price": "$269.99",
+        "price": 269.99,
         "category": "Cooling",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6541/6541439_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -948,7 +948,7 @@
     {
         "name": "NZXT - Kraken 240 - 120mm Fans + AIO 240mm Radiator Liquid Cooling System with 1.54\" LCD Display and F Series Fans - Black",
         "model": "RL-KN240-B1",
-        "price": "$127.99",
+        "price": 127.99,
         "category": "Cooling",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6541/6541455_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -962,7 +962,7 @@
     {
         "name": "CORSAIR - LL Series, RGB 120mm Computer Case Fan with Lighting Node PRO (3-pack) - White",
         "model": "CO-9050092-WW",
-        "price": "$69.99",
+        "price": 69.99,
         "category": "Cooling",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6351/6351851_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -976,7 +976,7 @@
     {
         "name": "NZXT - Kraken Elite 280 - 140mm Fans + AIO 280mm Radiator Liquid Cooling System with 2.36\" wide-angle LCD display and F  Fans - Black",
         "model": "RL-KN28E-B1",
-        "price": "$179.99",
+        "price": 179.99,
         "category": "Cooling",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6541/6541456_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -990,7 +990,7 @@
     {
         "name": "MSI - MAG CORELIQUID 240R V2 - AIO ARGB CPU Liquid Cooler - Rotating Cap Design - 240mm Radiator - Dual 120mm ARGB PWM Fans - Black",
         "model": "MAG CoreLiquid 240R V2",
-        "price": "$91.99",
+        "price": 91.99,
         "category": "Cooling",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6490/6490148_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1004,7 +1004,7 @@
     {
         "name": "CORSAIR - iCUE H100i ELITE LCD XT 120mm Fans + 240mm Radiator Liquid Cooling System with IPS LCD Screen - Black",
         "model": "CW-9060074-WW",
-        "price": "$219.99",
+        "price": 219.99,
         "category": "Cooling",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6534/6534170_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1018,7 +1018,7 @@
     {
         "name": "CORSAIR - iCUE LINK H150i QX RGB LED 360mm Radiator CPU Liquid Cooler (3 120mm Core Fans) with 2.1\" IPS LCD Screen - White",
         "model": "CW-9061010-WW",
-        "price": "$284.99",
+        "price": 284.99,
         "category": "Cooling",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6567/6567535_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1032,7 +1032,7 @@
     {
         "name": "CORSAIR - AF120 RGB ELITE 120mm Computer Case Fan with AirGuide Technology (3-pack) - Black",
         "model": "CO-9050154-WW",
-        "price": "$82.99",
+        "price": 82.99,
         "category": "Cooling",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6532/6532235_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1046,7 +1046,7 @@
     {
         "name": "CORSAIR - AF120 RGB ELITE 120mm Computer Case Fan with AirGuide Technology - Black",
         "model": "CO-9050153-WW",
-        "price": "$24.99",
+        "price": 24.99,
         "category": "Cooling",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6532/6532237_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1060,7 +1060,7 @@
     {
         "name": "CORSAIR - iCUE H100i ELITE CAPELLIX XT Liquid CPU Cooler with RGB Lighting - White",
         "model": "CW-9060072-WW",
-        "price": "$164.99",
+        "price": 164.99,
         "category": "Cooling",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6534/6534176_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1074,7 +1074,7 @@
     {
         "name": "CORSAIR - iCUE LINK QX120 RGB 120mm PWM Computer Case Fan with iCUE LINK System Hub Kit (3-pack) - Black",
         "model": "CO-9051002-WW",
-        "price": "$139.99",
+        "price": 139.99,
         "category": "Cooling",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6549/6549154_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1088,7 +1088,7 @@
     {
         "name": "NZXT - Kraken 120mm Liquid Cooler with 1\" LCD Display - Black",
         "model": "RL-KR120-B1",
-        "price": "$84.99",
+        "price": 84.99,
         "category": "Cooling",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6486/6486421_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1102,7 +1102,7 @@
     {
         "name": "CORSAIR - iCUE Commander Core XT Smart RGB Lighting and Fan Speed Controller - Black",
         "model": "CL-9011112-WW",
-        "price": "$49.99",
+        "price": 49.99,
         "category": "Cooling",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6477/6477042cv11d.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [],
@@ -1111,7 +1111,7 @@
     {
         "name": "Samsung - 870 EVO  1TB Internal SSD SATA",
         "model": "6447127",
-        "price": "$74.99",
+        "price": 74.99,
         "category": "SSD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6447/6447127_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1127,7 +1127,7 @@
     {
         "name": "Samsung - 990 PRO 2TB Internal SSD PCle Gen 4x4 NVMe",
         "model": "6523595",
-        "price": "$169.99",
+        "price": 169.99,
         "category": "SSD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6523/6523595_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1143,7 +1143,7 @@
     {
         "name": "WD - BLACK SN850X 1TB Internal SSD PCIe Gen 4 x4 NVMe",
         "model": "6512131",
-        "price": "$84.99",
+        "price": 84.99,
         "category": "SSD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6512/6512131_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1159,7 +1159,7 @@
     {
         "name": "WD - Blue SA510 1TB Internal SSD SATA",
         "model": "6506976",
-        "price": "$79.99",
+        "price": 79.99,
         "category": "SSD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6506/6506976_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1175,7 +1175,7 @@
     {
         "name": "PNY - CS900 500GB Internal SSD SATA",
         "model": "6385542",
-        "price": "$40.99",
+        "price": 40.99,
         "category": "SSD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6385/6385542cv11d.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1191,7 +1191,7 @@
     {
         "name": "Samsung - 990 PRO 4TB Internal SSD PCle Gen 4x4 NVMe",
         "model": "6559270",
-        "price": "$319.99",
+        "price": 319.99,
         "category": "SSD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6559/6559270_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1207,7 +1207,7 @@
     {
         "name": "CORSAIR - MP600 PRO LPX 2TB Internal SSD PCIe Gen 4 x4 NVMe with Heatsink for PS5",
         "model": "6495945",
-        "price": "$169.99",
+        "price": 169.99,
         "category": "SSD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6495/6495945_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1223,7 +1223,7 @@
     {
         "name": "WD - BLACK SN770 1TB Internal SSD PCIe Gen 4 x4",
         "model": "6495881",
-        "price": "$74.99",
+        "price": 74.99,
         "category": "SSD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6495/6495881_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1239,7 +1239,7 @@
     {
         "name": "Samsung - 970 EVO Plus 500GB Internal SSD PCIe Gen 3 x4 NVMe",
         "model": "6324468",
-        "price": "$84.99",
+        "price": 84.99,
         "category": "SSD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6324/6324468_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1255,7 +1255,7 @@
     {
         "name": "Crucial - P3 Plus 4TB Internal SSD PCIe Gen 4 x4  NVMe",
         "model": "6509710",
-        "price": "$234.99",
+        "price": 234.99,
         "category": "SSD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6509/6509710_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1271,7 +1271,7 @@
     {
         "name": "Crucial - MX500 1TB Internal SSD SATA",
         "model": "6254400",
-        "price": "$79.99",
+        "price": 79.99,
         "category": "SSD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6254/6254400_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1287,7 +1287,7 @@
     {
         "name": "Samsung - 980 PRO 1TB Internal Gaming SSD PCIe Gen 4 x4 NVMe",
         "model": "6431939",
-        "price": "$89.99",
+        "price": 89.99,
         "category": "SSD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6431/6431939_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1303,7 +1303,7 @@
     {
         "name": "WD - BLACK SN850P 2TB Internal SSD PCIe Gen 4 x4 with Heatsink for PS5",
         "model": "6541326",
-        "price": "$209.99",
+        "price": 209.99,
         "category": "SSD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6541/6541326_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1319,7 +1319,7 @@
     {
         "name": "Samsung - 980 PRO Heatsink 1TB Internal SSD PCIe Gen 4 x4 NVMe for PS5",
         "model": "6485007",
-        "price": "$99.99",
+        "price": 99.99,
         "category": "SSD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6485/6485007_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1335,7 +1335,7 @@
     {
         "name": "WD - BLACK SN770M 2TB Internal SSD PCIe Gen 4 x4 M.2 2230 for ROG Ally and Steam Deck",
         "model": "6551144",
-        "price": "$219.99",
+        "price": 219.99,
         "category": "SSD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6551/6551144_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1351,7 +1351,7 @@
     {
         "name": "Samsung - 990 PRO 2TB Internal SSD PCIe Gen 4x4 NVMe with Heatsink for PS5",
         "model": "6523590",
-        "price": "$189.99",
+        "price": 189.99,
         "category": "SSD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6523/6523590_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1367,7 +1367,7 @@
     {
         "name": "Crucial - T500 1TB Internal SSD PCIe Gen 4x4 NVMe M.2",
         "model": "6566096",
-        "price": "$84.99",
+        "price": 84.99,
         "category": "SSD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6566/6566096_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1383,7 +1383,7 @@
     {
         "name": "Samsung - Geek Squad Certified Refurbished 980 PRO 2TB Internal SSD PCIe Gen 4 x4 NVMe",
         "model": "6451686",
-        "price": "$129.99",
+        "price": 129.99,
         "category": "SSD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6451/6451686_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1399,7 +1399,7 @@
     {
         "name": "WD - Blue SN580 1TB Internal SSD PCIe Gen 4 x4 NVMe",
         "model": "6558800",
-        "price": "$69.99",
+        "price": 69.99,
         "category": "SSD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6558/6558800_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1415,7 +1415,7 @@
     {
         "name": "Samsung - Geek Squad Certified Refurbished 970 EVO Plus 2TB Internal SSD PCIe Gen 3 x4 NVMe",
         "model": "6362136",
-        "price": "$109.99",
+        "price": 109.99,
         "category": "SSD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6362/6362136_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1431,7 +1431,7 @@
     {
         "name": "Seagate - IronWolf 12TB Internal SATA NAS Hard Drive with Rescue Data Recovery Services",
         "model": "ST12000VNA008",
-        "price": "$199.99",
+        "price": 199.99,
         "category": "HDD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6459/6459354_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1445,7 +1445,7 @@
     {
         "name": "WD - Blue 4TB Internal SATA Hard Drive for Desktops",
         "model": "WD40EZAX/WDBH2D0040HNC-NRSN",
-        "price": "$79.99",
+        "price": 79.99,
         "category": "HDD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/9026/9026007_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1461,7 +1461,7 @@
     {
         "name": "Seagate - IronWolf Pro 16TB Internal SATA NAS Hard Drive with Rescue Data Recovery Services",
         "model": "ST16000NTA01",
-        "price": "$269.99",
+        "price": 269.99,
         "category": "HDD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6545/6545785_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1477,7 +1477,7 @@
     {
         "name": "WD - BLACK Gaming 4TB Internal SATA Hard Drive for Desktops",
         "model": "WD4005FZBX/WDBSLA0040HNC-NRSN",
-        "price": "$139.99",
+        "price": 139.99,
         "category": "HDD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/9315/9315347_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1493,7 +1493,7 @@
     {
         "name": "WD - Red Plus 4TB Internal SATA NAS Hard Drive for Desktops",
         "model": "WD40EFPX/WDBC9V0040HH1-WRSN",
-        "price": "$99.99",
+        "price": 99.99,
         "category": "HDD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6523/6523107_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1509,7 +1509,7 @@
     {
         "name": "Seagate - Barracuda 8TB Internal SATA Hard Drive for Desktops",
         "model": "ST8000DMA04",
-        "price": "$109.99",
+        "price": 109.99,
         "category": "HDD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6425/6425021_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1523,7 +1523,7 @@
     {
         "name": "New!WD - Purple Surveillance 4TB Hard Drive 3.5 - Purple",
         "model": "WD43PURZ",
-        "price": "$94.99",
+        "price": 94.99,
         "category": "HDD",
         "product_image": "/~assets/bby/_com/shop/sku-list-item/dist/client/images/732deee9a2b6d37c839fd93be4d6ef8e.png",
         "Specifications": [
@@ -1539,7 +1539,7 @@
     {
         "name": "WD - Black 1TB Internal SATA Hard Drive (OEM/Bare Drive) for Desktops",
         "model": "WD1003FZEX",
-        "price": "$56.99",
+        "price": 56.99,
         "category": "HDD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5792/5792406_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1555,7 +1555,7 @@
     {
         "name": "WD - Blue 1TB Internal SATA Hard Drive for Laptops",
         "model": "WD10SPZX/WDBMYH0010BNC-NRSN",
-        "price": "$52.99",
+        "price": 52.99,
         "category": "HDD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/9314/9314126_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1571,7 +1571,7 @@
     {
         "name": "Seagate - FireCuda 4TB Internal SATA Hard Drive for Desktops",
         "model": "ST4000DXA05",
-        "price": "$149.99",
+        "price": 149.99,
         "category": "HDD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6498/6498117_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1587,7 +1587,7 @@
     {
         "name": "WD - Red Pro 18TB Internal SATA NAS Hard Drive for Desktops",
         "model": "WD181KFGX/WDBC9Y0180HH1-WRSN",
-        "price": "$349.99",
+        "price": 349.99,
         "category": "HDD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6523/6523108_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1603,7 +1603,7 @@
     {
         "name": "WD - Blue 1TB Internal SATA Hard Drive (OEM/Bare Drive) for Desktops",
         "model": "WD10EZEX",
-        "price": "$49.99",
+        "price": 49.99,
         "category": "HDD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/9312/9312067_sa.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1619,7 +1619,7 @@
     {
         "name": "Buffalo - 4TB Internal SATA NAS Hard Drive for TeraStation 5010/3010 Series",
         "model": "OP-HD4.0N",
-        "price": "$169.99",
+        "price": 169.99,
         "category": "HDD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5750/5750312_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1631,7 +1631,7 @@
     {
         "name": "ADATA - HD710 Pro 2TB Black External USB-C Hard Drive - Black",
         "model": "AHD710P-2TU31-CBK",
-        "price": "$59.99",
+        "price": 59.99,
         "category": "HDD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6513/6513721_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1644,7 +1644,7 @@
     {
         "name": "ADATA - HD710 Pro 1TB Black External USB-C Hard Drive - Black",
         "model": "AHD710P-1TU31-CBK",
-        "price": "$49.99",
+        "price": 49.99,
         "category": "HDD",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6513/6513717_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1657,7 +1657,7 @@
     {
         "name": "PNY - XLR8 Gaming 16GB (2x8GB)  3200MHz  DDR4 DRAM (PC4-25600) CL16 1.35V Dual Channel Desktop (DIMM) Memory Kit - Red",
         "model": "MD16GK2D4320016AXR",
-        "price": "$38.99",
+        "price": 38.99,
         "category": "RAM",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5878/5878702_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1673,7 +1673,7 @@
     {
         "name": "CORSAIR - VENGEANCE LPX CMK32GX4M2E3200C16 32GB (2PK X 16GB) 3200MHz DDR4 C16 DIMM Desktop Memory - Black",
         "model": "CMK32GX4M2E3200C16",
-        "price": "$79.99",
+        "price": 79.99,
         "category": "RAM",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6448/6448611_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1689,7 +1689,7 @@
     {
         "name": "PNY - Performance 8GB DDR4 DRAM 3200MHz CL22 SODIMM Notebook/Laptop Memory - Black",
         "model": "MN8GSD43200-TB",
-        "price": "$18.99",
+        "price": 18.99,
         "category": "RAM",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6511/6511519_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1705,7 +1705,7 @@
     {
         "name": "CORSAIR - VENGEANCE PRO CMW32GX4M2E3200C16 RGB 32 GB (2PK X 16GB) 3200MHz DDR4 C16 DIMM Desktop Memory - Black",
         "model": "CMW32GX4M2E3200C16",
-        "price": "$99.99",
+        "price": 99.99,
         "category": "RAM",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6448/6448612_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1721,7 +1721,7 @@
     {
         "name": "CORSAIR - VENGEANCE PRO 32GB (2PK x 16GB) 3600MHz DDR4 C18 DIMM Desktop Memory with RGB lighting - Black",
         "model": "CMW32GX4M2D3600C18",
-        "price": "$99.99",
+        "price": 99.99,
         "category": "RAM",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6449/6449223_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1737,7 +1737,7 @@
     {
         "name": "Crucial - Pro 64GB Kit (2x32GB) 3200 MHz DDR4-3200 UDIMM Desktop Memory - Black",
         "model": "CP2K32G4DFRA32A",
-        "price": "$119.99",
+        "price": 119.99,
         "category": "RAM",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6543/6543930_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1753,7 +1753,7 @@
     {
         "name": "CORSAIR - Vengeance LPX CMK16GX4M2B3200C16 16GB (2PK X 8GB) 3200MHz DDR4 C16 DIMM Desktop Memory - Black",
         "model": "CMK16GX4M2B3200C16",
-        "price": "$46.99",
+        "price": 46.99,
         "category": "RAM",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4895/4895506_sa.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1769,7 +1769,7 @@
     {
         "name": "CORSAIR - VENGEANCE 32GB (2x16GB) 7200MHz PC5-57600 C34 Intel XMP UDIMM Desktop Memory with RGB Lighting - Multi",
         "model": "CMH32GX5M2X7200C34",
-        "price": "$169.99",
+        "price": 169.99,
         "category": "RAM",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6554/6554930_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1785,7 +1785,7 @@
     {
         "name": "CORSAIR - VENGEANCE RGB PRO SL 32GB (2PK x 16GB) 3600MHz DDR4 C18 DIMM Desktop Memory - White",
         "model": "CMH32GX4M2D3600C18W",
-        "price": "$99.99",
+        "price": 99.99,
         "category": "RAM",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6457/6457798_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1801,7 +1801,7 @@
     {
         "name": "CORSAIR - VENGEANCE 32GB (1PK 32GB) 4800MHz DDR5 C40 SODIMM Laptop Memory - Black",
         "model": "CMSX32GX5M1A4800C40",
-        "price": "$89.99",
+        "price": 89.99,
         "category": "RAM",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6519/6519626_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1817,7 +1817,7 @@
     {
         "name": "CORSAIR - Vengeance 16GB (1PK 16GB) 4800MHz DDR5 C40 SODIMM Laptop Memory - Black",
         "model": "CMSX16GX5M1A4800C40",
-        "price": "$49.99",
+        "price": 49.99,
         "category": "RAM",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6516/6516932_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1833,7 +1833,7 @@
     {
         "name": "CORSAIR - VENGEANCE 32GB (2x16GB) 6000MHz DDR5 C36 1.4V Intel XMP Desktop Memory - Black",
         "model": "CMH32GX5M2E6000C36",
-        "price": "$124.99",
+        "price": 124.99,
         "category": "RAM",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6562/6562314_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1849,7 +1849,7 @@
     {
         "name": "CORSAIR - VENGEANCE Performance 16GB (1PK 16GB) 3200MHz DDR4 C22 SODIMM Laptop Memory - Black",
         "model": "CMSX16GX4M1A3200C22",
-        "price": "$39.99",
+        "price": 39.99,
         "category": "RAM",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6519/6519625_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1865,7 +1865,7 @@
     {
         "name": "Crucial - 32GB (2PK 16GB) 3200MHz speed PC4-25600 DDR4 SODIMM Laptop Memory Kit - Green",
         "model": "CT2K16G4SFRA32A",
-        "price": "$77.99",
+        "price": 77.99,
         "category": "RAM",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6462/6462508_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1881,7 +1881,7 @@
     {
         "name": "CORSAIR - VENGEANCE LPX 16GB (2PK x 8GB) 3600MHz DDR4 C18 DIMM Desktop Memory - Black",
         "model": "CMK16GX4M2D3600C18",
-        "price": "$49.99",
+        "price": 49.99,
         "category": "RAM",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6412/6412826_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1897,7 +1897,7 @@
     {
         "name": "CORSAIR - VENGEANCE RGB 32GB (2PK 16GB) 6000MHz DDR5 C40 Desktop Memory - Black",
         "model": "CMH32GX5M2B6000C40",
-        "price": "$119.99",
+        "price": 119.99,
         "category": "RAM",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6536/6536566_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1913,7 +1913,7 @@
     {
         "name": "CORSAIR - VENGEANCE 64GB (2PK 32GB) 6400MHz PC5-51200 DDR5 C32 DIMM Desktop Memory with RGB Lighting - Multi",
         "model": "CMH64GX5M2B6400C32",
-        "price": "$264.99",
+        "price": 264.99,
         "category": "RAM",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6542/6542589_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1929,7 +1929,7 @@
     {
         "name": "CORSAIR - VENGEANCE LPX 32GB (2PK x 16GB) 3600MHz DDR4 C18 DIMM Desktop Memory - Black",
         "model": "CMK32GX4M2D3600C18",
-        "price": "$84.99",
+        "price": 84.99,
         "category": "RAM",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6470/6470356_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1945,7 +1945,7 @@
     {
         "name": "ASUS - TUF GAMING X570-PLUS (WI-FI) (Socket AM4) USB-C Gen2 AMD Motherboard with LED Lighting",
         "model": "TUF X570-PLUS GAMING (WI-FI)",
-        "price": "$179.99",
+        "price": 179.99,
         "category": "Motherboards",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6356/6356983_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1961,7 +1961,7 @@
     {
         "name": "ASUS - ROG STRIX Z790-E GAMING WIFI (Socket LGA 1700) USB 3.2 Intel Motherboard",
         "model": "ROG STRIX Z790-E GAMING WIFI",
-        "price": "$381.99",
+        "price": 381.99,
         "category": "Motherboards",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6523/6523725_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1977,7 +1977,7 @@
     {
         "name": "MSI - B550 TOMAHAWK MAX WIFI (Socket AM4) USB-C Gen2 AMD ATX GAMING Motherboard - Black",
         "model": "B550TMHWKWIFI",
-        "price": "$169.99",
+        "price": 169.99,
         "category": "Motherboards",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6504/6504286_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -1993,7 +1993,7 @@
     {
         "name": "ASUS - PRIME Z790-A WIFI (Socket LGA 1700) USB 3.2 Intel Motherboard",
         "model": "PRIME Z790-A WIFI",
-        "price": "$309.99",
+        "price": 309.99,
         "category": "Motherboards",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6523/6523719_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2009,7 +2009,7 @@
     {
         "name": "MSI - B550 GAMING PLUS (Socket AM4) USB-C Gen 2 AMD ATX GAMING Motherboard PCIE Gen 4 - Black",
         "model": "B550GPLUS",
-        "price": "$159.99",
+        "price": 159.99,
         "category": "Motherboards",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6424/6424047cv20d.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2025,7 +2025,7 @@
     {
         "name": "MSI - MPG Z790 EDGE WIFI (Socket LGA 1700) USB 3.2 Intel Motherboard - Black",
         "model": "MPG Z790 EDGE WIFI",
-        "price": "$309.99",
+        "price": 309.99,
         "category": "Motherboards",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6532/6532231_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2041,7 +2041,7 @@
     {
         "name": "MSI - MAG Z790 TOMAHAWK WIFI DDR4 Socket 1700 USB 3.2 Intel Motherboard - Black",
         "model": "MAG Z790 TOMAHAWK WiFi DDR4",
-        "price": "$229.99",
+        "price": 229.99,
         "category": "Motherboards",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6522/6522749cv13d.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2057,7 +2057,7 @@
     {
         "name": "ASUS - ROG MAXIMUS Z790 HERO (Socket LGA 1700) USB 3.2 Intel Motherboard",
         "model": "ROG MAXIMUS Z790 HERO",
-        "price": "$529.99",
+        "price": 529.99,
         "category": "Motherboards",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6523/6523718_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2073,7 +2073,7 @@
     {
         "name": "ASUS - ROG STRIX B650E-F GAMING WIFI (Socket AM5) USB 3.2 AMD Motherboard",
         "model": "ROG STRIX B650E-F GAMING WIFI",
-        "price": "$289.99",
+        "price": 289.99,
         "category": "Motherboards",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6523/6523721_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2089,7 +2089,7 @@
     {
         "name": "MSI - MAG B650 Tomahawk WIFI (Socket LGA 1718) USB 3.2 AMD Motherboard - Black",
         "model": "MAG B650 Tomahawk WIFI",
-        "price": "$217.99",
+        "price": 217.99,
         "category": "Motherboards",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6528/6528249_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2105,7 +2105,7 @@
     {
         "name": "MSI - MAG B760 TOMAHAWK WIFI DDR4 (Socket LGA 1700) USB 3.2 Intel Motherboard - Black",
         "model": "MAG B760 TOMAHAWK WIFI DDR4",
-        "price": "$164.99",
+        "price": 164.99,
         "category": "Motherboards",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6530/6530193_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2121,7 +2121,7 @@
     {
         "name": "ASUS - TUF GAMING X670E-PLUS WIFI (Socket AM5) AMD Ryzen 7000 Series ATX Motherboard",
         "model": "TUF GAMING X670E-PLUS WIFI",
-        "price": "$299.99",
+        "price": 299.99,
         "category": "Motherboards",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6523/6523727_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2137,7 +2137,7 @@
     {
         "name": "MSI - Pro Z790-A WIFI  (Socket 1700) USB 3.2 Intel Motherboard - Black",
         "model": "PRO Z790-A WIFI",
-        "price": "$239.99",
+        "price": 239.99,
         "category": "Motherboards",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6539/6539308_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2153,7 +2153,7 @@
     {
         "name": "GIGABYTE - Z790 AORUS ELITE X WIFI7 (Socket LGA 1700) USB 3.2 Type-C Intel Motherboard - Black",
         "model": "Z790 A ELITE X WIFI7",
-        "price": "$299.99",
+        "price": 299.99,
         "category": "Motherboards",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6562/6562709_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2169,7 +2169,7 @@
     {
         "name": "ASUS - ROG STRIX B550-F GAMING AM4 Socket USB 3.2 AMD Motherboard - Black",
         "model": "ROG STRIX B550-F GAMING",
-        "price": "$179.99",
+        "price": 179.99,
         "category": "Motherboards",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6422/6422283_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2185,7 +2185,7 @@
     {
         "name": "MSI - Z790 GAMING PLUS WIFI (Socket 1700) USB 3.2 Intel Motherboard - Black",
         "model": "Z790 GAMING PLUS WIFI",
-        "price": "$239.99",
+        "price": 239.99,
         "category": "Motherboards",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6571/6571301_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2201,7 +2201,7 @@
     {
         "name": "MSI - PRO Z690-A WIFI  Socket LGA 1700 USB 3.2 Intel Motherboard - Black",
         "model": "PRO Z690-A WIFI",
-        "price": "$229.99",
+        "price": 229.99,
         "category": "Motherboards",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6492/6492913_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2217,7 +2217,7 @@
     {
         "name": "ASUS - ROG STRIX X670E-I GAMING WIFI (Socket AM5) USB 3.2 AMD Motherboard",
         "model": "ROG STRIX X670E-I GAMING WIFI",
-        "price": "$439.99",
+        "price": 439.99,
         "category": "Motherboards",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6523/6523772_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2233,7 +2233,7 @@
     {
         "name": "CORSAIR - RMx Series RM1000x 80 PLUS Gold Fully Modular ATX Power Supply - Black",
         "model": "CP-9020201-NA",
-        "price": "$174.99",
+        "price": 174.99,
         "category": "PSU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6459/6459246_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2249,7 +2249,7 @@
     {
         "name": "CORSAIR - RMe Series RM750e 80 PLUS Gold Fully Modular Low-Noise ATX 3.0 and PCIE 5.0 Power Supply - Black",
         "model": "CP-9020262-NA",
-        "price": "$78.99",
+        "price": 78.99,
         "category": "PSU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6537/6537989_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2265,7 +2265,7 @@
     {
         "name": "EVGA - 750 BP, 80+ BRONZE 750W, 100-BP-0750-K1, Power supply",
         "model": "100-BP-0750-K1",
-        "price": "$89.99",
+        "price": 89.99,
         "category": "PSU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6505/6505301_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2281,7 +2281,7 @@
     {
         "name": "MSI MPG A850G PCIE 5 - Full Modular \u2013 80 Plus Gold 850W - 100% Japanese 105\u00b0C Capacitors \u2013 ATX 3.0 Gaming Power Supply - Black",
         "model": "MPG A850G PCIE 5",
-        "price": "$134.99",
+        "price": 134.99,
         "category": "PSU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6524/6524434cv17d.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2297,7 +2297,7 @@
     {
         "name": "CORSAIR - RM Series RM850 850W ATX 80 PLUS GOLD Certified Fully Modular Power Supply - White",
         "model": "CP-9020232-NA",
-        "price": "$139.99",
+        "price": 139.99,
         "category": "PSU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6477/6477389_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2313,7 +2313,7 @@
     {
         "name": "Thermaltake - SMART 700W ATX 80 Plus Power Supply - Black",
         "model": "PS-SPD-0700NPCWUS-1",
-        "price": "$59.99",
+        "price": 59.99,
         "category": "PSU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6339/6339087_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2329,7 +2329,7 @@
     {
         "name": "EVGA - SuperNOVA 1300W GT Power Supply",
         "model": "220-GT-1300-X1",
-        "price": "$237.99",
+        "price": 237.99,
         "category": "PSU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6500/6500780_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2345,7 +2345,7 @@
     {
         "name": "EVGA - GT Series 850W Auto Eco Mode with FDB Fan 80 Plus Power Supply",
         "model": "220-GT-0850-Y1",
-        "price": "$124.99",
+        "price": 124.99,
         "category": "PSU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6481/6481207_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2361,7 +2361,7 @@
     {
         "name": "CORSAIR - CX-M Series CX650M Semi-Modular Low-Noise ATX Power Supply - Black",
         "model": "CP-9020221-NA",
-        "price": "$69.99",
+        "price": 69.99,
         "category": "PSU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6459/6459240_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2377,7 +2377,7 @@
     {
         "name": "CORSAIR - HXi Series 1000W 80 Plus Platinum Fully-Modular Ultra-Low Noise ATX Power Supply - Black",
         "model": "CP-9020259-NA",
-        "price": "$259.99",
+        "price": 259.99,
         "category": "PSU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6544/6544995_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2393,7 +2393,7 @@
     {
         "name": "MSI - A65GL 650W Full Modular 80 Plus Gold Power Supply - Black",
         "model": "MAG A650GL",
-        "price": "$89.99",
+        "price": 89.99,
         "category": "PSU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6562/6562434cv17d.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2409,7 +2409,7 @@
     {
         "name": "NZXT - C-1000 ATX Gaming Power Supply - Black",
         "model": "PA-0G1BB-US",
-        "price": "$154.99",
+        "price": 154.99,
         "category": "PSU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510032_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2421,7 +2421,7 @@
     {
         "name": "CORSAIR - 2\u2019 Premium Individually Sleeved 12+4pin PCIe Gen 5 Type-4 600W 12VHPWR Cable - Black",
         "model": "CP-8920331",
-        "price": "$29.99",
+        "price": 29.99,
         "category": "PSU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6531/6531632_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [],
@@ -2430,7 +2430,7 @@
     {
         "name": "EVGA SuperNOVA 1000 GT Fully Modular Power Supply",
         "model": "220-GT-1000-X1",
-        "price": "$158.99",
+        "price": 158.99,
         "category": "PSU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6528/6528734_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2446,7 +2446,7 @@
     {
         "name": "New!Thermaltake - GF1 (2024) 750W 80 PLUS Gold Fully Modular Power Supply - Black",
         "model": "PS-TPD-0750FNFAGU-P",
-        "price": "$80.99",
+        "price": 80.99,
         "category": "PSU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6574/6574592_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2462,7 +2462,7 @@
     {
         "name": "CORSAIR - SF-L Series SF850L 80 Plus Gold Fully Modular ATX Power Supply - Black",
         "model": "CP-9020245-NA",
-        "price": "$128.99",
+        "price": 128.99,
         "category": "PSU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6546/6546864_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2478,7 +2478,7 @@
     {
         "name": "MSI - A750GL PCIE 5 750W ATX 3.0 Full Modular 80 Plus Gold Gaming Power Supply - Black",
         "model": "MAG A750GL PCIE5",
-        "price": "$94.99",
+        "price": 94.99,
         "category": "PSU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6562/6562433cv17d.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [
@@ -2494,7 +2494,7 @@
     {
         "name": "Thermaltake - Toughpower GF3 1200W 80 PLUS Gold PCIe Gen 5 ATX 3.0 Ready Fully Modular Power Supply - Black",
         "model": "PS-TPD-1200FNFAGU-4",
-        "price": "$179.99",
+        "price": 179.99,
         "category": "PSU",
         "product_image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6535/6535775_sd.jpg;maxHeight=200;maxWidth=300",
         "Specifications": [

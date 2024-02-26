@@ -21,11 +21,6 @@ use OpenApi\Attributes as OAT;
             example: 1,
         ),
         new OAT\Property(
-            property: 'price',
-            type: 'number',
-            example: 100.00,
-        ),
-        new OAT\Property(
             property: 'product',
             ref: "#/components/schemas/ProductResource"
         )
@@ -51,7 +46,6 @@ class LineItemResource extends JsonResource
         return [
             'id' => $this->id,
             'quantity' => $this->quantity,
-            'price' => $this->price,
             'product' => new ProductResource($this->product),
         ];
     }

@@ -51,14 +51,12 @@ class OrderService
 
         foreach ($request->products as $item) {
             $product = $this->productService->getById($item['id']);
-            $formattedPrice = str_replace('$', '', $product->price);
 
 
             $this->lineItemRepository->create([
                 'order_id' => $order->id,
                 'product_id' => $product->id,
                 'quantity' => $item['quantity'],
-                'price' => $formattedPrice,
             ]);
         }
 

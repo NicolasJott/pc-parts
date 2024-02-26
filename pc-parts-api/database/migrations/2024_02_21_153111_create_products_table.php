@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string("name");
             $table->string("model");
-            $table->string("price");
+            $table->float("price");
             $table->string("category");
             $table->string("product_image");
             $table->json("specifications");

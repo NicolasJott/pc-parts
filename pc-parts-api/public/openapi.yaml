@@ -515,9 +515,6 @@ components:
         quantity:
           type: integer
           example: 1
-        price:
-          type: number
-          example: 100
         product:
           $ref: '#/components/schemas/ProductResource'
       type: object
@@ -581,8 +578,9 @@ components:
           type: string
           example: 100-100000910WOF
         price:
-          type: string
-          example: $369.00
+          type: number
+          format: float
+          example: 369
         category:
           type: string
           example: CPU
