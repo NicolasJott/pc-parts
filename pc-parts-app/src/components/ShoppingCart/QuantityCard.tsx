@@ -11,12 +11,17 @@ export const QuantityCard = () => {
       borderRadius={32}
     >
       <HStack spacing={5}>
-        <MinusIcon fontSize={"12px"} color={"lightText.700"} />
+        <MinusIcon
+          fontSize={"10px"}
+          color={"lightText.700"}
+          cursor={"pointer"}
+        />
         <Text>1</Text>
         <AddIcon
-          fontSize={"12px"}
+          fontSize={"10px"}
           color={"lightText.700"}
           justifySelf={"flex-end"}
+          cursor={"pointer"}
         />
       </HStack>
     </Box>
