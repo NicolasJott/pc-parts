@@ -3,24 +3,22 @@ import {
   Box,
   HStack,
   Heading,
-  IconButton,
   Input,
   InputGroup,
   InputRightElement,
   Link,
   Text,
 } from "@chakra-ui/react";
-import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import { ShoppingCart } from ".";
 
 export const NavBar = () => {
   return (
     <Box
-      py={4}
-      px={8}
+      px={6}
       display={"flex"}
       alignItems={"center"}
       w={"100%"}
-      h={20}
+      h={16}
       justifyContent={"space-between"}
     >
       {/* Links */}
@@ -64,21 +62,7 @@ export const NavBar = () => {
           <Link color={"lightText.700"} href="/account">
             <Text fontSize={"sm"}>Account</Text>
           </Link>
-          <IconButton
-            variant={"outline"}
-            borderColor={"lightText.600"}
-            borderRadius={"4px"}
-            justifySelf={"flex-end"}
-            aria-label="Shopping Cart"
-            _hover={{ bg: "primary.900" }}
-            size="md"
-            icon={
-              <ShoppingCartOutlinedIcon
-                fontSize="inherit"
-                sx={{ color: "#f5f6f5" }}
-              />
-            }
-          />
+          <ShoppingCart />
         </HStack>
       </Box>
     </Box>
