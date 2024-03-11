@@ -9,7 +9,7 @@ import {
   Link,
   Text,
 } from "@chakra-ui/react";
-import { ShoppingCart } from ".";
+import { ShoppingCartDrawer } from "../ShoppingCart";
 
 export const NavBar = () => {
   return (
@@ -62,7 +62,7 @@ export const NavBar = () => {
           <Link color={"lightText.700"} href="/account">
             <Text fontSize={"sm"}>Account</Text>
           </Link>
-          <ShoppingCart />
+          <ShoppingCartDrawer />
         </HStack>
       </Box>
     </Box>

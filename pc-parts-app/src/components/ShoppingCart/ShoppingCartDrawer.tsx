@@ -6,15 +6,15 @@ import {
   DrawerHeader,
   DrawerOverlay,
   Heading,
-  Icon,
   IconButton,
   VStack,
   useDisclosure,
 } from "@chakra-ui/react";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { useRef } from "react";
+import { CartItem } from ".";
 
-export const ShoppingCart = () => {
+export const ShoppingCartDrawer = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef<HTMLButtonElement>(null);
 
@@ -43,7 +43,7 @@ export const ShoppingCart = () => {
         onClose={onClose}
         finalFocusRef={btnRef}
         colorScheme="whiteAlpha"
-        size={"sm"}
+        size={"md"}
       >
         <DrawerOverlay
           backdropFilter={"auto"}
@@ -80,17 +80,19 @@ export const ShoppingCart = () => {
             display={"flex"}
             flexDir={"column"}
             alignItems={"center"}
-            justifyContent={"center"}
+            w={"100%"}
           >
-            <VStack alignItems={"center"} justifyContent={"center"}>
-              <Icon
+            <VStack alignItems={"center"} w={"100%"}>
+              {/* <Icon
                 color={"lightText.800"}
                 fontSize={"48px"}
                 as={ShoppingCartOutlinedIcon}
               />
               <Heading color={"lightText.800"} size={"lg"}>
                 Your cart is empty.
-              </Heading>
+              </Heading> */}
+              <CartItem />
+              <CartItem />
             </VStack>
           </DrawerBody>
         </DrawerContent>
