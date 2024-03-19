@@ -18,7 +18,7 @@ export const ProductPage = () => {
   }
 
   return (
-    <Box mx={"auto"} px={4} maxW={"8xl"}>
+    <Box mx={"auto"} px={4} mt={4} maxW={"8xl"}>
       {query.data && <ProductPageCard product={query.data} />}
     </Box>
   );

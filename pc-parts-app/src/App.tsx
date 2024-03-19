@@ -9,7 +9,7 @@ import { Store } from "./pages/Store";
 function App() {
   return (
     <Router>
-      <Box bg={"#FAFAFA"} minH={"100vh"}>
+      <Box bg={"#FAFAFA"} minH={"100vh"} minW={"100vw"}>
         <NavBar />
         <Box>
           <Routes>

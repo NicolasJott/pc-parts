@@ -13,7 +13,7 @@ export const Landing = () => {
   }
 
   return (
-    <Box minH={"60vh"}>
+    <Box minH={"60vh"} minW={"100vw"}>
       <HeroProducts
         products={query.data?.sort(() => (Math.random() > 0.5 ? 1 : -1))}
       />
