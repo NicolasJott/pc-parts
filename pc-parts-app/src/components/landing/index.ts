@@ -1,0 +1,1 @@
+export { HeroProducts } from "./HeroProducts";
