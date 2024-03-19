@@ -81,4 +81,38 @@ class ProductController extends Controller
 
         return Response::json(ProductResource::collection($products));
     }
+
+    /**
+     * Read by ID
+     *
+     * @param Request $request
+     * @return JsonResponse
+     */
+    #[OAT\Get(
+        path: '/api/products/{id}',
+        operationId: 'ProductController.readById',
+        summary: 'Read products by Id',
+        security: [['BearerToken' => []]],
+        tags: ['products'],
+        parameters: [
+            new OAT\Parameter(
+                name: 'id',
+                in: 'path',
+                required: true,
+            ),
+        ],
+        responses: [
+            new OAT\Response(
+                response: HttpResponse::HTTP_OK,
+                description: 'Ok',
+                content: new OAT\JsonContent(ref: '#/components/schemas/ProductResource'),
+            ),
+        ]
+    )]
+    public function readById(int $id): JsonResponse
+    {
+        $product = $this->productService->getById($id);
+
+        return Response::json(new ProductResource($product));
+    }
 }

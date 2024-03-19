@@ -288,6 +288,28 @@ paths:
       security:
         -
           BearerToken: []
+  '/api/products/{id}':
+    get:
+      tags:
+        - products
+      summary: 'Read products by category'
+      description: 'Read by ID'
+      operationId: ProductController.readById
+      parameters:
+        -
+          name: id
+          in: path
+          required: true
+      responses:
+        '200':
+          description: Ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProductResource'
+      security:
+        -
+          BearerToken: []
   /api/profile:
     get:
       tags:
