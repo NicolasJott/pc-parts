@@ -15,11 +15,13 @@ export const NavBar = () => {
   return (
     <Box
       px={6}
+      bg={"background.800"}
       display={"flex"}
       alignItems={"center"}
       w={"100%"}
       h={16}
       justifyContent={"space-between"}
+      boxShadow={"lg"}
     >
       {/* Links */}
       <Box flex={"1"} display={"flex"} justifyContent={"flex-start"}>
