@@ -17,10 +17,13 @@ function App() {
           <NavBar />
           <Box>
             <Routes>
+              {/* Store Routes */}
               <Route path="/" element={<Landing />} />
               <Route path="/store" element={<Store />} />
               <Route path="/about" element={<About />} />
               <Route path="/product/:productId" element={<ProductPage />} />
+
+              {/* Protected Routes */}
               <Route element={<ProtectedRoute />}>
                 <Route path="/account" element={<Account />} />
               </Route>
