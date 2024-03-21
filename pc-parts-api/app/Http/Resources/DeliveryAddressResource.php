@@ -11,16 +11,6 @@ use OpenApi\Attributes as OAT;
     schema: 'DeliveryAddressResource',
     properties: [
         new OAT\Property(
-            property: 'id',
-            type: 'integer',
-            example: 1
-        ),
-        new OAT\Property(
-            property: 'order_id',
-            type: 'integer',
-            example: 1
-        ),
-        new OAT\Property(
             property: 'address1',
             type: 'string',
             example: '123 Easy Street'
@@ -54,16 +44,24 @@ class DeliveryAddressResource extends JsonResource
      * Transform the resource into an array.
      *
      * @param  \Illuminate\Http\Request  $request
+     * @param  array  $excludeFields Fields to exclude from the resource.
      * @return array|Arrayable|JsonSerializable
      */
-    public function toArray($request): array|Arrayable|JsonSerializable
+    public function toArray($request, array $excludeFields = []): array|Arrayable|JsonSerializable
     {
-        return [
+        $data = [
             'address1' => $this->address1,
             'address2' => $this->address2,
             'city' => $this->city,
             'state' => $this->state,
             'zipCode' => $this->zipCode,
         ];
+
+        foreach ($excludeFields as $field) {
+            unset($data[$field]);
+        }
+
+        return $data;
+
     }
 }
