@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Events\UserSignedUp;
 use App\Http\Requests\Auth\LoginRequest;
 use App\Http\Requests\Auth\SignupRequest;
-use App\Http\Resources\LoggedInUserResource;
+use App\Http\Resources\AccessTokenResource;
 use App\Services\AuthService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -48,7 +48,7 @@ class AuthController extends Controller
             new OAT\Response(
                 response: HttpResponse::HTTP_CREATED,
                 description: 'Created',
-                content: new OAT\JsonContent(ref: '#/components/schemas/LoggedInUserResource')
+                content: new OAT\JsonContent(ref: '#/components/schemas/AccessTokenResource')
             ),
             new OAT\Response(
                 response: HttpResponse::HTTP_UNPROCESSABLE_ENTITY,
@@ -63,7 +63,10 @@ class AuthController extends Controller
 
         UserSignedUp::dispatch($user);
 
-        return Response::json(new LoggedInUserResource($user), HttpResponse::HTTP_CREATED);
+        $token = $user->createToken('auth-token');
+
+
+        return Response::json(new AccessTokenResource($token), HttpResponse::HTTP_CREATED);
     }
 
     /**
@@ -89,7 +92,7 @@ class AuthController extends Controller
             new OAT\Response(
                 response: HttpResponse::HTTP_OK,
                 description: 'Ok',
-                content: new OAT\JsonContent(ref: '#/components/schemas/LoggedInUserResource')
+                content: new OAT\JsonContent(ref: '#/components/schemas/AccessTokenResource')
             ),
             new OAT\Response(
                 response: HttpResponse::HTTP_UNPROCESSABLE_ENTITY,
@@ -114,8 +117,9 @@ class AuthController extends Controller
     public function login(LoginRequest $request): JsonResponse
     {
         $user = $this->authService->loginUser($request);
+        $token = $user->createToken('auth-token');
 
-        return Response::json(new LoggedInUserResource($user));
+        return Response::json(new AccessTokenResource($token));
     }
 
     /**
