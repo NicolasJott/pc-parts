@@ -8,6 +8,7 @@ import { Account } from "./pages/Account";
 import { Landing } from "./pages/Landing";
 import { ProductPage } from "./pages/ProductPage";
 import { Store } from "./pages/Store";
+import { Login } from "./pages/auth/Login";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
           <NavBar />
           <Box>
             <Routes>
+              {/* Auth Routes */}
+              <Route path="/login" element={<Login />} />
               {/* Store Routes */}
               <Route path="/" element={<Landing />} />
               <Route path="/store" element={<Store />} />
