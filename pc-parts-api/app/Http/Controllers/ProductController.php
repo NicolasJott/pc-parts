@@ -32,7 +32,6 @@ class ProductController extends Controller
         path: '/api/products',
         operationId: 'ProductController.readAll',
         summary: 'Read all products',
-        security: [['BearerToken' => []]],
         tags: ['products'],
         responses: [
             new OAT\Response(
@@ -47,41 +46,6 @@ class ProductController extends Controller
         return Response::json(ProductResource::collection($this->productService->getMulti()));
     }
 
-
-    /**
-     * Read by category
-     *
-     * @param Request $request
-     * @return JsonResponse
-     */
-    #[OAT\Get(
-        path: '/api/products/{category}',
-        operationId: 'ProductController.readByCategory',
-        summary: 'Read products by category',
-        security: [['BearerToken' => []]],
-        tags: ['products'],
-        parameters: [
-            new OAT\Parameter(
-                name: 'category',
-                in: 'path',
-                required: true,
-            ),
-        ],
-        responses: [
-            new OAT\Response(
-                response: HttpResponse::HTTP_OK,
-                description: 'Ok',
-                content: new OAT\JsonContent(ref: '#/components/schemas/ProductResourceCollection'),
-            ),
-        ]
-    )]
-    public function readByCategory(string $category): JsonResponse
-    {
-        $products = $this->productService->getByCategory($category);
-
-        return Response::json(ProductResource::collection($products));
-    }
-
     /**
      * Read by ID
      *
@@ -92,7 +56,6 @@ class ProductController extends Controller
         path: '/api/products/{id}',
         operationId: 'ProductController.readById',
         summary: 'Read products by Id',
-        security: [['BearerToken' => []]],
         tags: ['products'],
         parameters: [
             new OAT\Parameter(
