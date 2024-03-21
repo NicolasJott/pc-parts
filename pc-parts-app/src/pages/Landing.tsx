@@ -6,7 +6,11 @@ import { HeroProducts } from "../components/landing";
 import { HeroCarousel } from "../components/landing/HeroCarousel";
 
 export const Landing = () => {
-  const query = useQuery({ queryKey: ["products"], queryFn: getProducts });
+  const query = useQuery({
+    queryKey: ["products"],
+    queryFn: getProducts,
+    staleTime: 1 * 60 * 1000,
+  });
 
   if (query.isLoading) {
     return <CustomSpinner height="60vh" />;
