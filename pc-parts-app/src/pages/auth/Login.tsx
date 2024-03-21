@@ -9,6 +9,7 @@ export const Login = () => {
   if (authenticated) {
     return <Navigate to="/account" replace />;
   }
+
   return (
     <Box>
       <LoginForm />
