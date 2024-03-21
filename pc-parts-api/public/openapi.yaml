@@ -91,7 +91,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/LoggedInUserResource'
+                $ref: '#/components/schemas/AccessTokenResource'
         '422':
           description: 'Unprocessable entity'
           content:
@@ -117,7 +117,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/LoggedInUserResource'
+                $ref: '#/components/schemas/AccessTokenResource'
         '422':
           description: 'Unprocessable entity'
           content:
@@ -263,36 +263,11 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ProductResourceCollection'
-      security:
-        -
-          BearerToken: []
-  '/api/products/{category}':
-    get:
-      tags:
-        - products
-      summary: 'Read products by category'
-      description: 'Read by category'
-      operationId: ProductController.readByCategory
-      parameters:
-        -
-          name: category
-          in: path
-          required: true
-      responses:
-        '200':
-          description: Ok
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ProductResourceCollection'
-      security:
-        -
-          BearerToken: []
   '/api/products/{id}':
     get:
       tags:
         - products
-      summary: 'Read products by category'
+      summary: 'Read products by Id'
       description: 'Read by ID'
       operationId: ProductController.readById
       parameters:
@@ -307,9 +282,6 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ProductResource'
-      security:
-        -
-          BearerToken: []
   /api/profile:
     get:
       tags:
@@ -408,7 +380,6 @@ components:
         - name
         - email
         - password
-        - password_confirmation
       properties:
         name:
           type: string
@@ -418,9 +389,6 @@ components:
           format: email
           example: john@example.com
         password:
-          type: string
-          example: '123456'
-        password_confirmation:
           type: string
           example: '123456'
       type: object
@@ -507,12 +475,6 @@ components:
       type: object
     DeliveryAddressResource:
       properties:
-        id:
-          type: integer
-          example: 1
-        order_id:
-          type: integer
-          example: 1
         address1:
           type: string
           example: '123 Easy Street'
@@ -548,13 +510,6 @@ components:
       properties:
         admin:
           $ref: '#/components/schemas/AdminResource'
-        token:
-          $ref: '#/components/schemas/AccessTokenResource'
-      type: object
-    LoggedInUserResource:
-      properties:
-        user:
-          $ref: '#/components/schemas/UserResource'
         token:
           $ref: '#/components/schemas/AccessTokenResource'
       type: object
@@ -614,6 +569,8 @@ components:
           example: "AMD Ryzen 7 7800X3D The dominant gaming processor with AMD 3D V-Cache technology for even more game performance.  Whatever the setting, whatever the resolution, lead your team to victory with this incredible gaming processor.  Plus, enjoy the benefits of next-gen AMD 3D V-Cache technology for lower latency and even more game performance.\_"
         specifications:
           type: array
+          items:
+            type: string
           example:
             - 'Socket AM5 (LGA 1718)'
             - '4.2 gigahertz'
