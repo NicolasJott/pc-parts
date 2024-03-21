@@ -14,7 +14,7 @@ const sortOptions = [
 export const Store = () => {
   const [categories, setCategories] = useState<string[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const query = useQuery({ queryKey: ["products"], queryFn: getProducts });
+  const query = useQuery({ queryKey: ["storeProducts"], queryFn: getProducts });
 
   useEffect(() => {
     if (query.isSuccess && query.data) {
@@ -79,7 +79,7 @@ export const Store = () => {
           </VStack>
           <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={4}>
             {filteredProducts.map((product) => (
-              <Box>
+              <Box width={{ md: "400px", base: "auto" }}>
                 <Link
                   position={"relative"}
                   display={"block"}
