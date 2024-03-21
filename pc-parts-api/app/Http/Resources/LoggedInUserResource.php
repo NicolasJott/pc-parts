@@ -8,13 +8,7 @@ use Illuminate\Http\Resources\Json\JsonResource;
 use JsonSerializable;
 use OpenApi\Attributes as OAT;
 
-#[OAT\Schema(
-    schema: 'LoggedInUserResource',
-    properties: [
-        new OAT\Property(property: 'user', ref: '#/components/schemas/UserResource', type: 'object'),
-        new OAT\Property(property: 'token', ref: '#/components/schemas/AccessTokenResource', type: 'object'),
-    ]
-)]
+
 class LoggedInUserResource extends JsonResource
 {
     /**
@@ -39,7 +33,6 @@ class LoggedInUserResource extends JsonResource
         $token = $this->user->createToken('auth-token');
 
         return [
-            'user' => new UserResource($this->user),
             'token' => new AccessTokenResource($token),
         ];
     }
