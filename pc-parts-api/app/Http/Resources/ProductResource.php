@@ -17,7 +17,7 @@ use OpenApi\Attributes as OAT;
         new OAT\Property(property: 'category', type: 'string', example: 'CPU'),
         new OAT\Property(property: 'product_image', type: 'string', example: 'https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6537/6537139cv11d.jpg;maxHeight=200;maxWidth=300'),
         new OAT\Property(property: 'description', type: 'string', example: 'AMD Ryzen 7 7800X3D The dominant gaming processor with AMD 3D V-Cache technology for even more game performance.  Whatever the setting, whatever the resolution, lead your team to victory with this incredible gaming processor.  Plus, enjoy the benefits of next-gen AMD 3D V-Cache technology for lower latency and even more game performance. '),
-        new OAT\Property(property: 'specifications', type: 'array', example: ["Socket AM5 (LGA 1718)", "4.2 gigahertz", "5 gigahertz", "8-core", "16", "Yes"]),
+        new OAT\Property(property: 'specifications', type: 'array', example: ["Socket AM5 (LGA 1718)", "4.2 gigahertz", "5 gigahertz", "8-core", "16", "Yes"], items: new OAT\Items(type: 'string')),
     ]
 )]
 
