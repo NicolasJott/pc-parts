@@ -7,21 +7,23 @@ import { useAsync } from "@react-hookz/web";
 import { useEffect, useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { Link as ReactRouterLink } from "react-router-dom";
-import { login } from "../../api/auth";
+import { signUp } from "../../api/auth";
 import { useAuth } from "../context/AuthContext";
 
 interface IFormInput {
+  firstName: string;
+  lastName: string;
   email: string;
   password: string;
 }
 
-export const LoginForm = () => {
+export const SignupForm = () => {
   const { session } = useAuth();
   const [status, setStatus] = useState<"not-executed" | "loading">(
     "not-executed"
   );
-  const [error, setError] = useState<boolean>(false);
-  const [loginState, loginActions] = useAsync(login);
+
+  const [signupState, signupActions] = useAsync(signUp);
   const {
     register,
     handleSubmit,
@@ -29,21 +31,18 @@ export const LoginForm = () => {
   } = useForm<IFormInput>();
 
   const onSubmit: SubmitHandler<IFormInput> = (data) => {
-    setError(false);
-    loginActions.execute(data.email, data.password);
+    const formattedName = `${data.firstName} ${data.lastName}`;
+    signupActions.execute(formattedName, data.email, data.password);
   };
 
   useEffect(() => {
-    if (loginState.status === "success" && loginState.result) {
+    if (signupState.status === "success" && signupState.result) {
       if (status === "not-executed") {
         setStatus("loading");
-        session.create(loginState.result.access_token);
+        session.create(signupState.result.access_token);
       }
     }
-    if (loginState.status === "error") {
-      setError(true);
-    }
-  }, [loginState, session, status]);
+  }, [signupState, session, status]);
 
   return (
     <Box
@@ -64,17 +63,36 @@ export const LoginForm = () => {
         borderColor={"neutral.200"}
       >
         <VStack alignItems={"flex-start"} spacing={0} w={"100%"}>
-          <Heading textAlign={"left"}>Welcome back!</Heading>
-          <Text textAlign={"left"}>Log in to your account to continue.</Text>
+          <Heading textAlign={"left"}>Get Started Now!</Heading>
+          <Text textAlign={"left"}>Create an account to continue.</Text>
         </VStack>
 
         <VStack spacing={8} w={"100%"}>
-          <FormControl isRequired isInvalid={!!errors.email}>
-            {error && (
-              <Text color={"red"} mb={1}>
-                Invalid email or password
-              </Text>
+          <FormControl isRequired isInvalid={!!errors.firstName}>
+            <FormLabel>First Name</FormLabel>
+            <Input
+              placeholder="First name"
+              {...register("firstName", {
+                required: "First name is required",
+              })}
+            />
+            {!!errors.firstName && (
+              <FormErrorMessage>{errors.firstName.message}</FormErrorMessage>
             )}
+          </FormControl>
+          <FormControl isRequired isInvalid={!!errors.lastName}>
+            <FormLabel>Last Name</FormLabel>
+            <Input
+              placeholder="Last name"
+              {...register("lastName", {
+                required: "Last name is required",
+              })}
+            />
+            {!!errors.lastName && (
+              <FormErrorMessage>{errors.lastName.message}</FormErrorMessage>
+            )}
+          </FormControl>
+          <FormControl isRequired isInvalid={!!errors.email}>
             <FormLabel>Email</FormLabel>
             <Input
               placeholder="Email address"
@@ -110,9 +128,9 @@ export const LoginForm = () => {
           </Button>
         </VStack>
         <Text>
-          Don't have an account?{" "}
-          <Link as={ReactRouterLink} to="/signup" color={"primary.900"}>
-            Sign Up
+          Have an account?{" "}
+          <Link as={ReactRouterLink} to="/login" color={"primary.900"}>
+            Login
           </Link>
         </Text>
       </VStack>
