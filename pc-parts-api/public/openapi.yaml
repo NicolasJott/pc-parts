@@ -145,6 +145,80 @@ paths:
       security:
         -
           BearerToken: []
+  /api/cart:
+    get:
+      tags:
+        - cart
+      summary: 'Get a cart'
+      description: 'Get a cart'
+      operationId: CartController.getCart
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CartResource'
+        '404':
+          description: 'Not found'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidationError'
+      security:
+        -
+          BearerToken: []
+    post:
+      tags:
+        - cart
+      summary: 'Create a new cart'
+      description: 'create a cart'
+      operationId: CartController.createCart
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CartResource'
+        '422':
+          description: 'Unprocessable entity'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidationError'
+      security:
+        -
+          BearerToken: []
+  /api/cart/item:
+    post:
+      tags:
+        - cart
+      summary: 'Add item to cart'
+      description: 'Add item to cart'
+      operationId: CartController.addCartItem
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AddCartItemRequest'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CartItemResource'
+        '404':
+          description: 'Not found'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidationError'
+      security:
+        -
+          BearerToken: []
   /api/orders:
     get:
       tags:
@@ -392,6 +466,19 @@ components:
           type: string
           example: '123456'
       type: object
+    AddCartItemRequest:
+      required:
+        - product_id
+        - quantity
+        - cart_id
+      properties:
+        product_id:
+          type: integer
+          example: 1
+        quantity:
+          type: integer
+          example: 1
+      type: object
     CreateOrderRequest:
       required:
         - firstName
@@ -472,6 +559,36 @@ components:
           type: string
           format: date-time
           example: '2022-08-27T16:14:46.000000Z'
+      type: object
+    CartItemResource:
+      properties:
+        id:
+          type: integer
+          example: 1
+        quantity:
+          type: integer
+          example: 1
+        cart_id:
+          type: integer
+          example: 1
+      type: object
+    CartItemResourceCollection:
+      type: array
+      items:
+        $ref: '#/components/schemas/CartItemResource'
+    CartResource:
+      properties:
+        id:
+          type: integer
+          example: 1
+        user_id:
+          type: integer
+          example: 1
+        total:
+          type: integer
+          example: 100
+        cartItems:
+          $ref: '#/components/schemas/CartItemResourceCollection'
       type: object
     DeliveryAddressResource:
       properties:

@@ -59,6 +59,7 @@ class RouteServiceProvider extends ServiceProvider
         ], function () {
             require base_path('routes/api/profile.php');
             require base_path('routes/api/orders.php');
+            require base_path('routes/api/cart.php');
         });
     }
 
