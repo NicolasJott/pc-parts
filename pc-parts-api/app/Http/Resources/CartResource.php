@@ -12,7 +12,7 @@ use OpenApi\Attributes as OAT;
     properties: [
         new OAT\Property(property: 'id', type: 'integer', example: 1),
         new OAT\Property(property: 'user_id', type: 'integer', example: 1),
-        new OAT\Property(property: 'total', type: 'integer', example: 100),
+        new OAT\Property(property: 'total', type: 'float', example: 100.00),
         new OAT\Property(property: 'cartItems', ref: '#/components/schemas/CartItemResourceCollection'),
     ]
 )]
