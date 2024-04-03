@@ -1,5 +1,6 @@
 import { CloseIcon } from "@chakra-ui/icons";
 import {
+  Box,
   Drawer,
   DrawerBody,
   DrawerContent,
@@ -8,6 +9,7 @@ import {
   DrawerOverlay,
   Heading,
   IconButton,
+  Text,
   useDisclosure,
 } from "@chakra-ui/react";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
@@ -29,23 +31,44 @@ export const ShoppingCartDrawer = () => {
 
   return (
     <>
-      <IconButton
-        ref={btnRef}
-        onClick={onOpen}
-        variant={"outline"}
-        borderColor={"lightText.600"}
-        borderRadius={"4px"}
-        justifySelf={"flex-end"}
-        aria-label="Shopping Cart"
-        _hover={{ bg: "primary.900" }}
-        size="md"
-        icon={
-          <ShoppingCartOutlinedIcon
-            fontSize="inherit"
-            sx={{ color: "#f5f6f5" }}
-          />
-        }
-      />
+      <Box pos={"relative"}>
+        <IconButton
+          ref={btnRef}
+          onClick={onOpen}
+          variant={"outline"}
+          borderColor={"lightText.600"}
+          borderRadius={"4px"}
+          justifySelf={"flex-end"}
+          aria-label="Shopping Cart"
+          _hover={{ bg: "primary.900" }}
+          size="md"
+          position={"relative"}
+          icon={
+            <ShoppingCartOutlinedIcon
+              fontSize="inherit"
+              sx={{ color: "#f5f6f5" }}
+            />
+          }
+        />
+        {query.data && query.data.cartItems.length > 0 && (
+          <Box
+            pos={"absolute"}
+            top={-2}
+            right={-2}
+            rounded={"full"}
+            w={5}
+            h={5}
+            bg={"primary.900"}
+            display={"flex"}
+            justifyContent={"center"}
+            alignItems={"center"}
+          >
+            <Text fontSize={"xs"} color={"lightText.800"}>
+              {query.data.cartItems.length}
+            </Text>
+          </Box>
+        )}
+      </Box>
       <Drawer
         isOpen={isOpen}
         placement="right"
