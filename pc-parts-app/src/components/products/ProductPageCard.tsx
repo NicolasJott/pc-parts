@@ -6,10 +6,13 @@ import {
   Heading,
   Image,
   ListItem,
+  Spinner,
   Stack,
   Text,
   UnorderedList,
 } from "@chakra-ui/react";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { addToCart } from "../../api/cart";
 import { IProduct } from "../../api/products";
 import { Price } from "./Price";
 
@@ -18,6 +21,21 @@ interface IProductPageCard {
 }
 
 export const ProductPageCard = ({ product }: IProductPageCard) => {
+  const queryClient = useQueryClient();
+
+  const mutation = useMutation({
+    mutationFn: (body: { product_id: number; quantity: number }) =>
+      addToCart(body),
+    onSuccess: () => {
+      queryClient.invalidateQueries({
+        queryKey: ["cart"],
+      });
+      queryClient.invalidateQueries({
+        queryKey: ["cartFooter"],
+      });
+    },
+  });
+
   return (
     <Box
       maxW={"1500px"}
@@ -86,7 +104,10 @@ export const ProductPageCard = ({ product }: IProductPageCard) => {
           mt={8}
           colorScheme="blue"
           bg={"primary.900"}
-          leftIcon={<AddIcon />}
+          leftIcon={mutation.isPending ? <Spinner /> : <AddIcon />}
+          onClick={() => {
+            mutation.mutate({ product_id: product.id, quantity: 1 });
+          }}
         >
           Add to cart
         </Button>
