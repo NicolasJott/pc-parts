@@ -219,6 +219,86 @@ paths:
       security:
         -
           BearerToken: []
+  '/api/cart/item/{id}':
+    get:
+      tags:
+        - cart
+      summary: 'Get cart item by id'
+      description: 'Get cart item'
+      operationId: CartController.getCartItem
+      parameters:
+        -
+          name: id
+          in: path
+          required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CartItemResource'
+        '204':
+          description: 'No content'
+        '404':
+          description: 'Not found'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidationError'
+      security:
+        -
+          BearerToken: []
+    put:
+      tags:
+        - cart
+      summary: 'Update cart item'
+      description: 'Update cart item'
+      operationId: CartController.updateCartItem
+      parameters:
+        -
+          name: id
+          in: path
+          required: true
+        -
+          name: method
+          in: query
+          required: true
+      responses:
+        '204':
+          description: 'No content'
+        '404':
+          description: 'Not found'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidationError'
+      security:
+        -
+          BearerToken: []
+    delete:
+      tags:
+        - cart
+      summary: 'Remove item from cart'
+      description: 'Remove item from cart'
+      operationId: CartController.removeCartItem
+      parameters:
+        -
+          name: id
+          in: path
+          required: true
+      responses:
+        '204':
+          description: 'No content'
+        '404':
+          description: 'Not found'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidationError'
+      security:
+        -
+          BearerToken: []
   /api/orders:
     get:
       tags:
@@ -571,6 +651,9 @@ components:
         cart_id:
           type: integer
           example: 1
+        product_id:
+          type: integer
+          example: 1
       type: object
     CartItemResourceCollection:
       type: array
@@ -585,7 +668,8 @@ components:
           type: integer
           example: 1
         total:
-          type: integer
+          type: number
+          format: float
           example: 100
         cartItems:
           $ref: '#/components/schemas/CartItemResourceCollection'
