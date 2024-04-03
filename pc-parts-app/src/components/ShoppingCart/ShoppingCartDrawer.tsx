@@ -3,20 +3,29 @@ import {
   Drawer,
   DrawerBody,
   DrawerContent,
+  DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   Heading,
   IconButton,
-  VStack,
   useDisclosure,
 } from "@chakra-ui/react";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import { useQuery } from "@tanstack/react-query";
 import { useRef } from "react";
-import { CartItem } from ".";
+import { CartBody } from ".";
+import { getCart } from "../../api/cart";
+import { CustomSpinner } from "../CustomSpinner";
+import { CartFooter } from "./CartFooter";
 
 export const ShoppingCartDrawer = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef<HTMLButtonElement>(null);
+
+  const query = useQuery({
+    queryKey: ["cart"],
+    queryFn: getCart,
+  });
 
   return (
     <>
@@ -82,19 +91,16 @@ export const ShoppingCartDrawer = () => {
             alignItems={"center"}
             w={"100%"}
           >
-            <VStack alignItems={"center"} w={"100%"}>
-              {/* <Icon
-                color={"lightText.800"}
-                fontSize={"48px"}
-                as={ShoppingCartOutlinedIcon}
-              />
-              <Heading color={"lightText.800"} size={"lg"}>
-                Your cart is empty.
-              </Heading> */}
-              <CartItem />
-              <CartItem />
-            </VStack>
+            {query.isLoading && <CustomSpinner height="100vh" />}
+            {query.data && query.data.cartItems && (
+              <CartBody cart={query.data} />
+            )}
           </DrawerBody>
+          {query.data && query.data.cartItems.length > 0 && (
+            <DrawerFooter color={"lightText.800"} display={"block"}>
+              <CartFooter cart={query.data} />
+            </DrawerFooter>
+          )}
         </DrawerContent>
       </Drawer>
     </>
