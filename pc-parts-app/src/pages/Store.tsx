@@ -23,7 +23,7 @@ export const Store = () => {
       );
       setCategories(uniqueCategories);
     }
-  }, [query]);
+  }, [query.isSuccess, query.data]);
 
   const handleCategoryClick = (category: string | null) => {
     setSelectedCategory(category);
