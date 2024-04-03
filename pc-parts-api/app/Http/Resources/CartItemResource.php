@@ -25,6 +25,11 @@ use OpenApi\Attributes as OAT;
             type: 'integer',
             example: 1,
         ),
+        new OAT\Property(
+            property: 'product_id',
+            type: 'integer',
+            example: 1,
+        ),
     ]
 )]
 
@@ -48,6 +53,7 @@ class CartItemResource extends JsonResource
             'id' => $this->id,
             'quantity' => $this->quantity,
             'cart_id' => $this->cart_id,
+            'product_id' => $this->product_id,
         ];
     }
 }
