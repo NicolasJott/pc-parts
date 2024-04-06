@@ -1,3 +1,5 @@
+import { LogoutButton } from "../components";
+
 export const Account = () => {
-  return <div>Account</div>;
+  return <LogoutButton />;
 };

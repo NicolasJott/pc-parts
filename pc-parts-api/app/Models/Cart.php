@@ -16,9 +16,11 @@ class Cart extends Model
      * @var array<int, string>
      */
     protected $fillable = [
+        'session_id',
         'user_id',
         'total'
     ];
+
 
     public function cartItems()
     {

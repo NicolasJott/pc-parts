@@ -44,6 +44,26 @@ class CartService
     }
 
     /**
+     * Create a cart with a specific id.
+     *
+     * @param  string  $id
+     * @return Cart
+     */
+    public function createWithSessionId(string $id): Cart
+    {
+        $cart = $this->cartRepository->get(['session_id' => $id]);
+
+        if ($cart) {
+            throw new HttpException(HttpResponse::HTTP_BAD_REQUEST, 'Cart already exists');
+        }
+
+        return $this->cartRepository->create([
+            'total' => 0,
+            'session_id' => $id
+        ]);
+    }
+
+    /**
      * Update the total of a cart.
      *
      * @param  Cart  $cart
@@ -62,15 +82,23 @@ class CartService
      * Get a cart by user id.
      *
      * @param  string  $user_id
-     * @return Cart
+     * @return Cart|null
      */
-    public function getCartByUserId(int $user_id): Cart
+    public function getCartByUserId(int $user_id): Cart|null
     {
         $cart = $this->cartRepository->get(['user_id' => $user_id]);
+        return $cart;
+    }
 
-        if (!$cart) {
-            throw new HttpException(HttpResponse::HTTP_NOT_FOUND, 'Cart not found');
-        }
+    /**
+     * Get a cart by id.
+     * 
+     * @param  string  $id
+     * @return Cart|null
+     */
+    public function getCartBySessionId(string $id): Cart|null
+    {
+        $cart = $this->cartRepository->get(['session_id' => $id]);
 
         return $cart;
     }

@@ -84,6 +84,7 @@ export const CartItemCard = ({ cartItem }: ICartItemProps) => {
             />
 
             <Image
+              maxH={"100%"}
               src={product.product_image}
               alt={product.name}
               color="white"

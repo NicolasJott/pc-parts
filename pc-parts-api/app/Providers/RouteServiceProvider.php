@@ -53,13 +53,16 @@ class RouteServiceProvider extends ServiceProvider
     {
         require base_path('routes/api/auth.php');
         require base_path('routes/api/products.php');
+        require base_path('routes/api/cartSession.php');
+
 
         Route::group([
             'middleware' => ['auth:user'],
         ], function () {
+            require base_path('routes/api/cart.php');
+
             require base_path('routes/api/profile.php');
             require base_path('routes/api/orders.php');
-            require base_path('routes/api/cart.php');
         });
     }
 

@@ -1,22 +1,17 @@
-const BASE_URL = `${import.meta.env.VITE_API_URL}/cart`;
+const BASE_URL = `${import.meta.env.VITE_API_URL}/cart/session`;
 import axios from "axios";
+import { CartItem } from "./cart";
 axios.defaults.withCredentials = true;
 
-export type CartItem = {
-  id: number;
-  quantity: number;
-  product_id: number;
-};
-
-export type Cart = {
+export type SessionCart = {
   id: string;
   user_id: number;
   cartItems: CartItem[];
   total: number;
 };
 
-export const getCart = async () => {
-  const response: { data: Cart } = await axios.get(`${BASE_URL}`);
+export const getSessionCart = async () => {
+  const response: { data: SessionCart } = await axios.get(`${BASE_URL}`);
   return response.data;
 };
 
@@ -27,7 +22,7 @@ export const getCartItem = async (id: string | number) => {
   return response.data;
 };
 
-export const addToCart = async (body: {
+export const addToSessionCart = async (body: {
   product_id: number;
   quantity: number;
 }) => {
@@ -38,7 +33,7 @@ export const addToCart = async (body: {
   return response.data;
 };
 
-export const updateCartItem = async (
+export const updateSessionCartItem = async (
   id: string | number,
   method: "add" | "remove"
 ) => {
@@ -48,7 +43,7 @@ export const updateCartItem = async (
   return response.data;
 };
 
-export const deleteCartItem = async (id: string | number) => {
+export const deleteSessionCartItem = async (id: string | number) => {
   const response = await axios.delete(`${BASE_URL}/item/${id}`);
   return response.data;
 };

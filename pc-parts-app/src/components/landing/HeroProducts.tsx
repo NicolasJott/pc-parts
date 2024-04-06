@@ -128,7 +128,7 @@ export const HeroProducts = ({ products }: IHeroProductsProps) => {
       templateColumns={{ md: "repeat(6, 1fr)", base: "repeat(1, 1fr)" }}
       gap={6}
       padding={4}
-      maxW="8xl"
+      maxW="6xl"
       mx="auto"
     >
       <HeroProductsGridItem

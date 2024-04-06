@@ -16,7 +16,7 @@ use OpenApi\Attributes as OAT;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
-class CartController extends Controller
+class SessionCartController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -37,12 +37,10 @@ class CartController extends Controller
      * @return JsonResponse
      */
     #[OAT\Post(
-        path: '/api/cart',
-        operationId: 'CartController.createCart',
+        path: '/api/cart/session',
+        operationId: 'SessionCartController.createCart',
         summary: 'Create a new cart',
-        tags: ['cart'],
-        security: [['BearerToken' => []]],
-
+        tags: ['cart/session'],
         responses: [
             new OAT\Response(
                 response: HttpResponse::HTTP_CREATED,
@@ -71,11 +69,10 @@ class CartController extends Controller
      * @return JsonResponse
      */
     #[OAT\Get(
-        path: '/api/cart',
-        operationId: 'CartController.getCart',
+        path: '/api/cart/session',
+        operationId: 'SessionCartController.getCart',
         summary: 'Get a cart',
-        tags: ['cart'],
-        security: [['BearerToken' => []]],
+        tags: ['cart/session'],
         responses: [
             new OAT\Response(
                 response: HttpResponse::HTTP_OK,
@@ -95,13 +92,6 @@ class CartController extends Controller
 
         $cart = null;
 
-        if ($request->user()->id) {
-            $cart = $this->cartService->getCartByUserId($request->user()->id);
-            if (!$cart) {
-                $cart = $this->cartService->createCart($request->user()->id);
-            }
-        }
-
         if (!$cart && $request->cookie('cart_id')) {
             $cartId = $request->cookie('cart_id');
             $cart = $this->cartService->getCartBySessionId($cartId);
@@ -120,12 +110,10 @@ class CartController extends Controller
      * @param AddCartItemRequest $request
      */
     #[OAT\Post(
-        path: '/api/cart/item',
-        operationId: 'CartController.addCartItem',
+        path: '/api/cart/session/item',
+        operationId: 'SessionCartController.addCartItem',
         summary: 'Add item to cart',
-        tags: ['cart'],
-        security: [['BearerToken' => []]],
-
+        tags: ['cart/session'],
         requestBody: new OAT\RequestBody(
             required: true,
             content: new OAT\JsonContent(ref: '#/components/schemas/AddCartItemRequest')
@@ -171,12 +159,10 @@ class CartController extends Controller
      * @param int $id
      */
     #[OAT\Get(
-        path: '/api/cart/item/{id}',
-        operationId: 'CartController.getCartItem',
+        path: '/api/cart/session/item/{id}',
+        operationId: 'SessionCartController.getCartItem',
         summary: 'Get cart item by id',
-        tags: ['cart'],
-        security: [['BearerToken' => []]],
-
+        tags: ['cart/session'],
         parameters: [
             new OAT\Parameter(
                 name: 'id',
@@ -219,12 +205,10 @@ class CartController extends Controller
      * @param int $id
      */
     #[OAT\Delete(
-        path: '/api/cart/item/{id}',
-        operationId: 'CartController.removeCartItem',
+        path: '/api/cart/session/item/{id}',
+        operationId: 'SessionCartController.removeCartItem',
         summary: 'Remove item from cart',
-        tags: ['cart'],
-        security: [['BearerToken' => []]],
-
+        tags: ['cart/session'],
         parameters: [
             new OAT\Parameter(
                 name: 'id',
@@ -266,12 +250,10 @@ class CartController extends Controller
      * @param string $method
      */
     #[OAT\Put(
-        path: '/api/cart/item/{id}',
-        operationId: 'CartController.updateCartItem',
+        path: '/api/cart/session/item/{id}',
+        operationId: 'SessionCartController.updateCartItem',
         summary: 'Update cart item',
-        tags: ['cart'],
-        security: [['BearerToken' => []]],
-
+        tags: ['cart/session'],
         parameters: [
             new OAT\Parameter(
                 name: 'id',

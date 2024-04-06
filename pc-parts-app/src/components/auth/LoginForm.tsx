@@ -47,10 +47,11 @@ export const LoginForm = () => {
 
   return (
     <Box
-      minH={"60vh"}
+      minH={"80vh"}
       display={"flex"}
       flexDirection={"column"}
       justifyContent={"center"}
+      pt={4}
       maxWidth={"xl"}
       mx={"auto"}
     >

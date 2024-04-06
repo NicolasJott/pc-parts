@@ -482,6 +482,142 @@ paths:
       security:
         -
           BearerToken: []
+  /api/cart/session:
+    get:
+      tags:
+        - cart/session
+      summary: 'Get a cart'
+      description: 'Get a cart'
+      operationId: SessionCartController.getCart
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CartResource'
+        '404':
+          description: 'Not found'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidationError'
+    post:
+      tags:
+        - cart/session
+      summary: 'Create a new cart'
+      description: 'create a cart'
+      operationId: SessionCartController.createCart
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CartResource'
+        '422':
+          description: 'Unprocessable entity'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidationError'
+  /api/cart/session/item:
+    post:
+      tags:
+        - cart/session
+      summary: 'Add item to cart'
+      description: 'Add item to cart'
+      operationId: SessionCartController.addCartItem
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AddCartItemRequest'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CartItemResource'
+        '404':
+          description: 'Not found'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidationError'
+  '/api/cart/session/item/{id}':
+    get:
+      tags:
+        - cart/session
+      summary: 'Get cart item by id'
+      description: 'Get cart item'
+      operationId: SessionCartController.getCartItem
+      parameters:
+        -
+          name: id
+          in: path
+          required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CartItemResource'
+        '204':
+          description: 'No content'
+        '404':
+          description: 'Not found'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidationError'
+    put:
+      tags:
+        - cart/session
+      summary: 'Update cart item'
+      description: 'Update cart item'
+      operationId: SessionCartController.updateCartItem
+      parameters:
+        -
+          name: id
+          in: path
+          required: true
+        -
+          name: method
+          in: query
+          required: true
+      responses:
+        '204':
+          description: 'No content'
+        '404':
+          description: 'Not found'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidationError'
+    delete:
+      tags:
+        - cart/session
+      summary: 'Remove item from cart'
+      description: 'Remove item from cart'
+      operationId: SessionCartController.removeCartItem
+      parameters:
+        -
+          name: id
+          in: path
+          required: true
+      responses:
+        '204':
+          description: 'No content'
+        '404':
+          description: 'Not found'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidationError'
 components:
   schemas:
     ValidationError:
@@ -667,6 +803,9 @@ components:
         user_id:
           type: integer
           example: 1
+        session_id:
+          type: string
+          example: '12345'
         total:
           type: number
           format: float
