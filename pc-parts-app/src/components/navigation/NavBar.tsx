@@ -26,15 +26,15 @@ export const NavBar = () => {
       {/* Links */}
       <Box flex={"1"} display={"flex"} justifyContent={"flex-start"}>
         <HStack gap={8} alignItems={"center"}>
-          <Link textDecorationColor={"background.800"} href="/">
+          <Link textDecorationColor={"background.800"} href="/store/home">
             <Heading fontSize={"md"} color={"lightText.800"}>
               PC PARTS
             </Heading>
           </Link>
-          <Link color={"lightText.700"} href="/store">
-            <Text fontSize={"sm"}>Store</Text>
+          <Link color={"lightText.700"} href="/store/products">
+            <Text fontSize={"sm"}>Products</Text>
           </Link>
-          <Link color={"lightText.700"} href="/about">
+          <Link color={"lightText.700"} href="/store/about">
             <Text fontSize={"sm"}>About</Text>
           </Link>
         </HStack>
