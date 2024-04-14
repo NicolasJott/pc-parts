@@ -2,40 +2,46 @@ import { Box } from "@chakra-ui/react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { AuthProvider } from "./components/context/AuthContext";
 import ProtectedRoute from "./components/context/ProtectedRoute";
-import { Footer, NavBar } from "./components/navigation";
-import { About } from "./pages/About";
-import { Account } from "./pages/Account";
-import { Landing } from "./pages/Landing";
-import { ProductPage } from "./pages/ProductPage";
-import { Store } from "./pages/Store";
-import { Login } from "./pages/auth/Login";
-import { Signup } from "./pages/auth/Signup";
+import {
+  About,
+  Account,
+  Checkout,
+  Information,
+  Landing,
+  Login,
+  ProductPage,
+  Products,
+  Signup,
+  Store,
+} from "./pages";
 
 function App() {
   return (
     <Router>
       <AuthProvider>
         <Box bg={"#FAFAFA"} minH={"100vh"} minW={"100vw"}>
-          <NavBar />
-          <Box>
-            <Routes>
-              {/* Auth Routes */}
-              <Route path="/login" element={<Login />} />
-              <Route path="/signup" element={<Signup />} />
+          <Routes>
+            {/* Auth Routes */}
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
 
-              {/* Store Routes */}
-              <Route path="/" element={<Landing />} />
-              <Route path="/store" element={<Store />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/product/:productId" element={<ProductPage />} />
+            {/* Store Routes */}
+            <Route path="/store" element={<Store />}>
+              <Route path="home" element={<Landing />} />
+              <Route path="products" element={<Products />} />
+              <Route path="about" element={<About />} />
+              <Route path="product/:productId" element={<ProductPage />} />
+            </Route>
 
-              {/* Protected Routes */}
-              <Route element={<ProtectedRoute />}>
-                <Route path="/account" element={<Account />} />
-              </Route>
-            </Routes>
-          </Box>
-          <Footer />
+            <Route path="checkout" element={<Checkout />}>
+              <Route path="information" element={<Information />} />
+            </Route>
+
+            {/* Protected Routes */}
+            <Route element={<ProtectedRoute />}>
+              <Route path="/account" element={<Account />} />
+            </Route>
+          </Routes>
         </Box>
       </AuthProvider>
     </Router>
