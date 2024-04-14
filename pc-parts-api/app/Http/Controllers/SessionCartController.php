@@ -56,8 +56,7 @@ class SessionCartController extends Controller
     )]
     public function createCart(Request $request): JsonResponse
     {
-
-        $cart = $this->cartService->createCart($request->user()->id);
+        $cart = $this->cartService->createWithSessionId($request->cookie('cart_id'));
 
         return Response::json(new CartResource($cart));
     }
@@ -134,10 +133,11 @@ class SessionCartController extends Controller
     )]
     public function addCartItem(AddCartItemRequest $request)
     {
-        $cart = $this->cartService->getCartByUserId($request->user()->id);
+        $sessionId = $request->cookie('cart_id');
+        $cart = $this->cartService->getCartBySessionId($sessionId);
 
         if (!$cart) {
-            $cart = $this->cartService->createCart($request->user()->id);
+            $cart = $this->cartService->createWithSessionId($sessionId);
         }
 
         $product = $this->productService->getById($request->product_id);

@@ -25,11 +25,26 @@ class CartItemService
      * Create a cart item.
      *
      * @param  int  $cart_id
-     * @param  int  $product_id
-     * @param  int  $quantity
+     * @param  AddCartItemRequest  $request
      * @return CartItem
      */
     public function createCartItem(int $cart_id, AddCartItemRequest $request): CartItem
+    {
+        return $this->cartItemRepository->create([
+            'cart_id' => $cart_id,
+            'product_id' => $request->product_id,
+            'quantity' => $request->quantity
+        ]);
+    }
+
+    /**
+     * Create a session cart item.
+     *
+     * @param  int  $cart_id
+     * @param  AddCartItemRequest  $request
+     * @return CartItem
+     */
+    public function createCartItemSession(int $cart_id, AddCartItemRequest $request): CartItem
     {
         return $this->cartItemRepository->create([
             'cart_id' => $cart_id,
