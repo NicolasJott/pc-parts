@@ -15,7 +15,7 @@ export const getSessionCart = async () => {
   return response.data;
 };
 
-export const getCartItem = async (id: string | number) => {
+export const getSessionCartItem = async (id: string | number) => {
   const response: { data: CartItem } = await axios.get(
     `${BASE_URL}/item/${id}`
   );
