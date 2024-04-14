@@ -1,5 +1,7 @@
 import { LogoutButton } from "../components";
 
-export const Account = () => {
+const Account = () => {
   return <LogoutButton />;
 };
+
+export default Account;

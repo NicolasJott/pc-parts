@@ -5,7 +5,7 @@ import { getProduct } from "../api/products";
 import { CustomSpinner } from "../components/CustomSpinner";
 import { ProductPageCard } from "../components/products/ProductPageCard";
 
-export const ProductPage = () => {
+const ProductPage = () => {
   const { productId } = useParams<{ productId: string }>();
 
   const query = useQuery({
@@ -23,3 +23,5 @@ export const ProductPage = () => {
     </Box>
   );
 };
+
+export default ProductPage;

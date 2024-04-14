@@ -2,7 +2,7 @@ import { Navigate } from "react-router";
 import { SignupForm } from "../../components";
 import { useAuth } from "../../components/context/AuthContext";
 
-export const Signup = () => {
+const Signup = () => {
   const { authenticated } = useAuth();
 
   if (authenticated) {
@@ -11,3 +11,5 @@ export const Signup = () => {
 
   return <SignupForm />;
 };
+
+export default Signup;

@@ -5,7 +5,7 @@ import { CustomSpinner } from "../components/CustomSpinner";
 import { HeroProducts } from "../components/landing";
 import { HeroCarousel } from "../components/landing/HeroCarousel";
 
-export const Landing = () => {
+const Landing = () => {
   const query = useQuery({
     queryKey: ["products"],
     queryFn: getProducts,
@@ -25,3 +25,5 @@ export const Landing = () => {
     </Box>
   );
 };
+
+export default Landing;
