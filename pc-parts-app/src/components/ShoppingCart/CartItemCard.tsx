@@ -12,13 +12,16 @@ import {
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { QuantityCard } from ".";
 import { CartItem, deleteCartItem } from "../../api/cart";
+import { deleteSessionCartItem } from "../../api/cartSession";
 import { getProduct } from "../../api/products";
+import { useAuth } from "../context/AuthContext";
 
 interface ICartItemProps {
   cartItem: CartItem;
 }
 
 export const CartItemCard = ({ cartItem }: ICartItemProps) => {
+  const { authenticated } = useAuth();
   const queryClient = useQueryClient();
 
   const query = useQuery({
@@ -27,10 +30,14 @@ export const CartItemCard = ({ cartItem }: ICartItemProps) => {
   });
 
   const removeFromCart = useMutation({
-    mutationFn: (id: string | number) => deleteCartItem(id),
+    mutationFn: (id: string | number) =>
+      authenticated ? deleteCartItem(id) : deleteSessionCartItem(id),
     onSuccess: () => {
       queryClient.invalidateQueries({
         queryKey: ["cart"],
+      });
+      queryClient.invalidateQueries({
+        queryKey: ["unAuthenticatedCart"],
       });
     },
   });

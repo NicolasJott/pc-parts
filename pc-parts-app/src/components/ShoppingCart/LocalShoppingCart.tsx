@@ -127,7 +127,7 @@ export const LocalShoppingCart = () => {
           </DrawerBody>
           {query.data && query.data.cartItems.length > 0 && (
             <DrawerFooter color={"lightText.800"} display={"block"}>
-              <CartFooter cart={query.data} />
+              <CartFooter cart={query.data} onClose={onClose} />
             </DrawerFooter>
           )}
         </DrawerContent>

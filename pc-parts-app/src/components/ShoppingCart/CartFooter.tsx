@@ -1,11 +1,15 @@
 import { Box, Button, Divider, HStack, Heading, Text } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 import { Cart } from "../../api/cart";
 
 interface ICartFooterProps {
   cart: Cart;
+  onClose: () => void;
 }
 
-export const CartFooter = ({ cart }: ICartFooterProps) => {
+export const CartFooter = ({ cart, onClose }: ICartFooterProps) => {
+  const navigate = useNavigate();
+
   return (
     <Box>
       <HStack justifyContent={"space-between"}>
@@ -44,7 +48,15 @@ export const CartFooter = ({ cart }: ICartFooterProps) => {
         </Text>
       </HStack>
       <Divider mb={8} mt={1} borderColor={"lightText.700"} />
-      <Button width={"100%"} colorScheme="blue" bg={"primary.900"}>
+      <Button
+        width={"100%"}
+        colorScheme="blue"
+        bg={"primary.900"}
+        onClick={() => {
+          onClose();
+          navigate("/checkout/information");
+        }}
+      >
         Proceed to Checkout
       </Button>
     </Box>

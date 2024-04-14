@@ -2,22 +2,32 @@ import { AddIcon, MinusIcon } from "@chakra-ui/icons";
 import { Box, HStack, Spinner, Text } from "@chakra-ui/react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { deleteCartItem, getCartItem, updateCartItem } from "../../api/cart";
+import {
+  deleteSessionCartItem,
+  getSessionCartItem,
+  updateSessionCartItem,
+} from "../../api/cartSession";
+import { useAuth } from "../context/AuthContext";
 
 interface IQuantityCardProps {
   cartItemId: number;
 }
 
 export const QuantityCard = ({ cartItemId }: IQuantityCardProps) => {
+  const { authenticated } = useAuth();
   const queryClient = useQueryClient();
 
   const query = useQuery({
     queryKey: ["cartItemQuantity", cartItemId],
-    queryFn: () => getCartItem(cartItemId),
+    queryFn: () =>
+      authenticated ? getCartItem(cartItemId) : getSessionCartItem(cartItemId),
   });
 
   const mutation = useMutation({
     mutationFn: (method: "add" | "remove") =>
-      updateCartItem(cartItemId, method),
+      authenticated
+        ? updateCartItem(cartItemId, method)
+        : updateSessionCartItem(cartItemId, method),
     onSuccess: () => {
       queryClient.invalidateQueries({
         queryKey: ["cartItemQuantity", cartItemId],
@@ -25,14 +35,21 @@ export const QuantityCard = ({ cartItemId }: IQuantityCardProps) => {
       queryClient.invalidateQueries({
         queryKey: ["cart"],
       });
+      queryClient.invalidateQueries({
+        queryKey: ["unAuthenticatedCart"],
+      });
     },
   });
 
   const removeFromCart = useMutation({
-    mutationFn: (id: string | number) => deleteCartItem(id),
+    mutationFn: (id: string | number) =>
+      authenticated ? deleteCartItem(id) : deleteSessionCartItem(id),
     onSuccess: () => {
       queryClient.invalidateQueries({
         queryKey: ["cart"],
+      });
+      queryClient.invalidateQueries({
+        queryKey: ["unAuthenticatedCart"],
       });
     },
   });

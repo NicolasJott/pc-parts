@@ -13,7 +13,9 @@ import {
 } from "@chakra-ui/react";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { addToCart } from "../../api/cart";
+import { addToSessionCart } from "../../api/cartSession";
 import { IProduct } from "../../api/products";
+import { useAuth } from "../context/AuthContext";
 import { Price } from "./Price";
 
 interface IProductPageCard {
@@ -21,14 +23,18 @@ interface IProductPageCard {
 }
 
 export const ProductPageCard = ({ product }: IProductPageCard) => {
+  const { authenticated } = useAuth();
   const queryClient = useQueryClient();
 
   const mutation = useMutation({
     mutationFn: (body: { product_id: number; quantity: number }) =>
-      addToCart(body),
+      authenticated ? addToCart(body) : addToSessionCart(body),
     onSuccess: () => {
       queryClient.invalidateQueries({
         queryKey: ["cart"],
+      });
+      queryClient.invalidateQueries({
+        queryKey: ["unAuthenticatedCart"],
       });
       queryClient.invalidateQueries({
         queryKey: ["cartFooter"],
