@@ -94,7 +94,7 @@ export const HeroProductsGridItem = ({
         w={"full"}
         h={"full"}
         aspectRatio={1 / 1}
-        href={`/product/${product?.id}`}
+        href={`product/${product?.id}`}
       >
         <GridTileImage
           src={product?.product_image}
