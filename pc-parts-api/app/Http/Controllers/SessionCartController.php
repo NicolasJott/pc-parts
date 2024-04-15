@@ -298,4 +298,40 @@ class SessionCartController extends Controller
         return Response::json(null, HttpResponse::HTTP_NO_CONTENT);
     }
 
+    /**
+     * Clear cart
+     * 
+     * @param Request $request
+     */
+    #[OAT\Delete(
+        path: '/api/cart/session',
+        operationId: 'SessionCartController.clearCart',
+        summary: 'Clear cart',
+        tags: ['cart/session'],
+        security: [['BearerToken' => []]],
+        responses: [
+            new OAT\Response(
+                response: HttpResponse::HTTP_NO_CONTENT,
+                description: 'No content',
+            ),
+            new OAT\Response(
+                response: HttpResponse::HTTP_NOT_FOUND,
+                description: 'Not found',
+                content: new OAT\JsonContent(ref: '#/components/schemas/ValidationError')
+            ),
+        ]
+    )]
+    public function clearCart(Request $request)
+    {
+        $cart = $this->cartService->getCartBySessionId($request->cookie('cart_id'));
+
+        if (!$cart) {
+            throw new NotFoundHttpException('Cart not found');
+        }
+
+        $this->cartService->clearCart($cart);
+
+        return Response::json(null, HttpResponse::HTTP_NO_CONTENT);
+    }
+
 }
