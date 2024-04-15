@@ -47,3 +47,8 @@ export const deleteSessionCartItem = async (id: string | number) => {
   const response = await axios.delete(`${BASE_URL}/item/${id}`);
   return response.data;
 };
+
+export const clearSessionCart = async () => {
+  const response = await axios.delete(`${BASE_URL}`);
+  return response.data;
+};
