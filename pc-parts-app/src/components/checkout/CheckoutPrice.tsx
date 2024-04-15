@@ -31,7 +31,7 @@ export const CheckoutPrice = ({ cart }: ICheckoutPriceProps) => {
         </Heading>
         <Box flexGrow={1} />
         <Heading as="h5" size={"md"}>
-          ${cartTotal}
+          ${(cartTotal * 1.07).toFixed(2)}
         </Heading>
       </Box>
     </VStack>
