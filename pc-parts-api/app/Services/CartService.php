@@ -103,6 +103,22 @@ class CartService
         return $cart;
     }
 
+    /**
+     * Clear a cart by User Id.
+     * 
+     * @param  string  $id
+     * @return Cart 
+     */
+    public function clearCart(Cart $cart): Cart
+    {
+        $cart->total = 0;
+        $cart->cartItems()->delete();
+        $cart->save();
+        return $cart;
+    }
+
+
+
 
 
 
