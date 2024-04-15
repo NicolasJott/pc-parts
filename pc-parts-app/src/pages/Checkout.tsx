@@ -34,6 +34,7 @@ type ContextType = {
   errors: FieldErrors<CheckoutFormData>;
   getValues: UseFormGetValues<CheckoutFormData>;
   submitOrder: () => void;
+  isLoading: boolean;
 };
 
 const Checkout = () => {
@@ -86,6 +87,8 @@ const Checkout = () => {
       createOrderMutation.mutate(orderData);
     });
 
+    createOrderMutation.isPending;
+
     return (
       <Container maxW={"6xl"} centerContent>
         <SimpleGrid columns={2}>
@@ -102,6 +105,7 @@ const Checkout = () => {
                   errors,
                   getValues,
                   submitOrder,
+                  isLoading: createOrderMutation.isPending,
                 } satisfies ContextType
               }
             />

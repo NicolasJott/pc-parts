@@ -25,12 +25,14 @@ interface IPaymentFormProps {
   contact: string;
   address: string;
   submitOrder: () => void;
+  isLoading: boolean;
 }
 
 export const PaymentForm = ({
   contact,
   address,
   submitOrder,
+  isLoading,
 }: IPaymentFormProps) => {
   const {
     register,
@@ -132,6 +134,7 @@ export const PaymentForm = ({
         </HStack>
 
         <Button
+          isLoading={isLoading}
           alignSelf={"flex-end"}
           colorScheme="blue"
           bg={"primary.900"}
