@@ -61,7 +61,7 @@ export const NavBar = () => {
       {/* Shopping Cart */}
       <Box flex={"1"} display={"flex"} justifyContent={"flex-end"}>
         <HStack gap={8} alignItems={"center"}>
-          <Link color={"lightText.700"} href="/account">
+          <Link color={"lightText.700"} href="/store/account">
             <Text fontSize={"sm"}>Account</Text>
           </Link>
           <ShoppingCartDrawer />
