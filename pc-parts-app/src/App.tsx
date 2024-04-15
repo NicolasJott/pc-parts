@@ -6,14 +6,17 @@ import {
   About,
   Account,
   Checkout,
+  ConfirmOrder,
   Information,
   Landing,
   Login,
+  Payment,
   ProductPage,
   Products,
   Signup,
   Store,
 } from "./pages";
+import Shipping from "./pages/Shipping";
 
 function App() {
   return (
@@ -31,16 +34,19 @@ function App() {
               <Route path="products" element={<Products />} />
               <Route path="about" element={<About />} />
               <Route path="product/:productId" element={<ProductPage />} />
+
+              {/* Protected Routes */}
+              <Route element={<ProtectedRoute />}>
+                <Route path="account" element={<Account />} />
+              </Route>
             </Route>
 
             <Route path="checkout" element={<Checkout />}>
               <Route path="information" element={<Information />} />
+              <Route path="shipping" element={<Shipping />} />
+              <Route path="payment" element={<Payment />} />
             </Route>
-
-            {/* Protected Routes */}
-            <Route element={<ProtectedRoute />}>
-              <Route path="/account" element={<Account />} />
-            </Route>
+            <Route path="checkout/confirm-order" element={<ConfirmOrder />} />
           </Routes>
         </Box>
       </AuthProvider>
