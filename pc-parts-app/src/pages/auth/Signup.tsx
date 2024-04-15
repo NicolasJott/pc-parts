@@ -6,7 +6,7 @@ const Signup = () => {
   const { authenticated } = useAuth();
 
   if (authenticated) {
-    return <Navigate to="/account" replace />;
+    return <Navigate to="/store/account" replace />;
   }
 
   return <SignupForm />;
