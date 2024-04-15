@@ -7,7 +7,7 @@ type DeliveryAddress = {
   address2: string;
   city: string;
   state: string;
-  zip: number;
+  zipCode: number;
 };
 
 type Item = {
