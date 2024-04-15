@@ -1,8 +1,8 @@
-import { ShippingForm } from "../components";
+import { PaymentForm } from "../components";
 import { useCheckout } from "./Checkout";
 
-const Shipping = () => {
-  const { getValues } = useCheckout();
+const Payment = () => {
+  const { getValues, submitOrder } = useCheckout();
 
   const contact = getValues("email");
   const address = [
@@ -15,7 +15,13 @@ const Shipping = () => {
     .filter(Boolean)
     .join(", ");
 
-  return <ShippingForm contact={contact} address={address} />;
+  return (
+    <PaymentForm
+      contact={contact}
+      address={address}
+      submitOrder={submitOrder}
+    />
+  );
 };
 
-export default Shipping;
+export default Payment;

@@ -85,7 +85,7 @@ const Products = () => {
                   display={"block"}
                   w={"full"}
                   h={"full"}
-                  href={`/product/${product.id}`}
+                  href={`product/${product.id}`}
                 >
                   <GridTileImage
                     alt={product.name}
