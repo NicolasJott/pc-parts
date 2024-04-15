@@ -117,7 +117,7 @@ export const AuthenticatedShoppingCart = ({
           </DrawerBody>
           {cart.cartItems.length > 0 && (
             <DrawerFooter color={"lightText.800"} display={"block"}>
-              <CartFooter cart={cart} />
+              <CartFooter cart={cart} onClose={onClose} />
             </DrawerFooter>
           )}
         </DrawerContent>
