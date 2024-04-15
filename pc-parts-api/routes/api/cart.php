@@ -10,7 +10,7 @@ Route::group(['prefix' => 'cart'], function () {
     Route::get('/item/{id}', [CartController::class, 'getCartItem']);
     Route::delete('/item/{id}', [CartController::class, 'removeCartItem']);
     Route::put('/item/{id}', [CartController::class, 'updateCartItem']);
-
+    Route::delete('/', [CartController::class, 'clearCart']);
 });
 
 

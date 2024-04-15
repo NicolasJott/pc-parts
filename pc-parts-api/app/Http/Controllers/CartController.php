@@ -316,4 +316,40 @@ class CartController extends Controller
         return Response::json(null, HttpResponse::HTTP_NO_CONTENT);
     }
 
+    /**
+     * Clear cart
+     * 
+     * @param Request $request
+     */
+    #[OAT\Delete(
+        path: '/api/cart',
+        operationId: 'CartController.clearCart',
+        summary: 'Clear cart',
+        tags: ['cart'],
+        security: [['BearerToken' => []]],
+        responses: [
+            new OAT\Response(
+                response: HttpResponse::HTTP_NO_CONTENT,
+                description: 'No content',
+            ),
+            new OAT\Response(
+                response: HttpResponse::HTTP_NOT_FOUND,
+                description: 'Not found',
+                content: new OAT\JsonContent(ref: '#/components/schemas/ValidationError')
+            ),
+        ]
+    )]
+    public function clearCart(Request $request)
+    {
+        $cart = $this->cartService->getCartByUserId($request->user()->id);
+
+        if (!$cart) {
+            throw new NotFoundHttpException('Cart not found');
+        }
+
+        $this->cartService->clearCart($cart);
+
+        return Response::json(null, HttpResponse::HTTP_NO_CONTENT);
+    }
+
 }
