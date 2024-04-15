@@ -190,6 +190,24 @@ paths:
       security:
         -
           BearerToken: []
+    delete:
+      tags:
+        - cart
+      summary: 'Clear cart'
+      description: 'Clear cart'
+      operationId: CartController.clearCart
+      responses:
+        '204':
+          description: 'No content'
+        '404':
+          description: 'Not found'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidationError'
+      security:
+        -
+          BearerToken: []
   /api/cart/item:
     post:
       tags:
@@ -300,22 +318,6 @@ paths:
         -
           BearerToken: []
   /api/orders:
-    get:
-      tags:
-        - orders
-      summary: 'Read all orders'
-      description: 'Read all Orders.'
-      operationId: OrderController.readAll
-      responses:
-        '200':
-          description: Ok
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/OrderResourceCollection'
-      security:
-        -
-          BearerToken: []
     post:
       tags:
         - orders
@@ -335,9 +337,6 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/OrderResource'
-      security:
-        -
-          BearerToken: []
   '/api/orders/{id}':
     get:
       tags:
@@ -357,9 +356,6 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/OrderResource'
-      security:
-        -
-          BearerToken: []
     put:
       tags:
         - orders
@@ -384,9 +380,6 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/OrderResource'
-      security:
-        -
-          BearerToken: []
     delete:
       tags:
         - orders
@@ -401,9 +394,6 @@ paths:
       responses:
         '204':
           description: 'No content'
-      security:
-        -
-          BearerToken: []
   /api/products:
     get:
       tags:
@@ -521,6 +511,24 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ValidationError'
+    delete:
+      tags:
+        - cart/session
+      summary: 'Clear cart'
+      description: 'Clear cart'
+      operationId: SessionCartController.clearCart
+      responses:
+        '204':
+          description: 'No content'
+        '404':
+          description: 'Not found'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidationError'
+      security:
+        -
+          BearerToken: []
   /api/cart/session/item:
     post:
       tags:

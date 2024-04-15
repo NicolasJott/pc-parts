@@ -35,7 +35,6 @@ class OrderController extends Controller
         path: '/api/orders',
         operationId: 'OrderController.create',
         summary: 'Create order',
-        security: [['BearerToken' => []]],
         requestBody: new OAT\RequestBody(
             required: true,
             content: new OAT\JsonContent(ref: '#/components/schemas/CreateOrderRequest')
@@ -57,32 +56,32 @@ class OrderController extends Controller
         return Response::json(new OrderResource($order));
     }
 
-    /**
-     * Read all Orders.
-     *
-     *
-     * @return JsonResponse
-     */
-    #[OAT\Get(
-        path: '/api/orders',
-        operationId: 'OrderController.readAll',
-        summary: 'Read all orders',
-        security: [['BearerToken' => []]],
-        tags: ['orders'],
-        responses: [
-            new OAT\Response(
-                response: HttpResponse::HTTP_OK,
-                description: 'Ok',
-                content: new OAT\JsonContent(ref: '#/components/schemas/OrderResourceCollection'),
-            ),
-        ]
-    )]
-    public function readAll(): JsonResponse
-    {
-        $orders = $this->orderService->readAllOrders();
+    // /**
+    //  * Read all Orders.
+    //  *
+    //  *
+    //  * @return JsonResponse
+    //  */
+    // #[OAT\Get(
+    //     path: '/api/orders',
+    //     operationId: 'OrderController.readAll',
+    //     summary: 'Read all orders',
+    //     security: [['BearerToken' => []]],
+    //     tags: ['orders'],
+    //     responses: [
+    //         new OAT\Response(
+    //             response: HttpResponse::HTTP_OK,
+    //             description: 'Ok',
+    //             content: new OAT\JsonContent(ref: '#/components/schemas/OrderResourceCollection'),
+    //         ),
+    //     ]
+    // )]
+    // public function readAll(): JsonResponse
+    // {
+    //     $orders = $this->orderService->readAllOrders();
 
-        return Response::json(OrderResource::collection($orders));
-    }
+    //     return Response::json(OrderResource::collection($orders));
+    // }
 
     /**
      * Read an Order
@@ -94,7 +93,6 @@ class OrderController extends Controller
         path: '/api/orders/{id}',
         operationId: 'OrderController.read',
         summary: 'Read single order',
-        security: [['BearerToken' => []]],
         tags: ['orders'],
         parameters: [
             new OAT\Parameter(
@@ -129,7 +127,6 @@ class OrderController extends Controller
         path: '/api/orders/{id}',
         operationId: 'OrderController.update',
         summary: 'Update single order',
-        security: [['BearerToken' => []]],
         requestBody: new OAT\RequestBody(
             required: true,
             content: new OAT\JsonContent(ref: '#/components/schemas/CreateOrderRequest')
@@ -169,7 +166,6 @@ class OrderController extends Controller
         path: '/api/orders/{id}',
         operationId: 'OrderController.delete',
         summary: 'Delete single order',
-        security: [['BearerToken' => []]],
         tags: ['orders'],
         parameters: [
             new OAT\Parameter(
