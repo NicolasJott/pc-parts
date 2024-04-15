@@ -10,7 +10,13 @@ interface IOrderSummaryProps {
 export const OrderSummary = ({ cart }: IOrderSummaryProps) => {
   const { cartItems } = cart;
   return (
-    <Container p={4}>
+    <Container
+      p={4}
+      borderLeft={"solid"}
+      borderLeftWidth={1}
+      borderLeftColor={"lightText.700"}
+      minH={"100vh"}
+    >
       {cartItems.map((item) => (
         <CheckoutItem key={item.id} cartItem={item} />
       ))}
