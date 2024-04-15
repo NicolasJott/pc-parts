@@ -1,7 +1,32 @@
 import { CheckCircleIcon } from "@chakra-ui/icons";
 import { Container, Heading, Link } from "@chakra-ui/react";
+import { useMountEffect } from "@react-hookz/web";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { clearCart } from "../api/cart";
+import { clearSessionCart } from "../api/cartSession";
+import { useAuth } from "../components/context/AuthContext";
 
 const ConfirmOrder = () => {
+  const queryClient = useQueryClient();
+
+  const { user } = useAuth();
+
+  const clearCartMutation = useMutation({
+    mutationFn: user ? clearCart : clearSessionCart,
+    onSuccess: () => {
+      queryClient.invalidateQueries({
+        queryKey: ["cart"],
+      });
+      queryClient.invalidateQueries({
+        queryKey: ["unAuthenticatedCart"],
+      });
+    },
+  });
+
+  useMountEffect(() => {
+    clearCartMutation.mutate();
+  });
+
   return (
     <Container
       minH={"100vh"}
