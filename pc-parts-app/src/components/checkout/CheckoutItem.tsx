@@ -39,6 +39,26 @@ export const CheckoutItem = ({ cartItem }: ICheckoutItemProps) => {
             p={2}
             pos={"relative"}
           >
+            <Box
+              pos={"absolute"}
+              bgColor={"primary.900"}
+              p={2}
+              w={6}
+              h={6}
+              border={"solid"}
+              borderColor={"lightText.800"}
+              borderWidth={1}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              borderRadius={"full"}
+              top={-3}
+              right={-3}
+            >
+              <Text fontSize={"xs"} color={"white"} p={0} m={0}>
+                {cartItem.quantity}
+              </Text>
+            </Box>
             <Image
               maxH={"100%"}
               src={product.product_image}
