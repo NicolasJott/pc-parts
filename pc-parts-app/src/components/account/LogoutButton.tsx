@@ -11,5 +11,9 @@ export const LogoutButton = () => {
     navigate(0);
   };
 
-  return <Button onClick={logout}>Logout</Button>;
+  return (
+    <Button onClick={logout} w={"100%"} colorScheme={"red"}>
+      Logout
+    </Button>
+  );
 };

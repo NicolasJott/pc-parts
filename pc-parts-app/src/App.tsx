@@ -10,13 +10,17 @@ import {
   Information,
   Landing,
   Login,
+  Order,
+  Orders,
   Payment,
   ProductPage,
   Products,
+  Profile,
+  Settings,
   Signup,
   Store,
 } from "./pages";
-import Shipping from "./pages/Shipping";
+import Shipping from "./pages/checkout/Shipping";
 
 function App() {
   return (
@@ -24,10 +28,6 @@ function App() {
       <AuthProvider>
         <Box bg={"#FAFAFA"} minH={"100vh"} minW={"100vw"}>
           <Routes>
-            {/* Auth Routes */}
-            <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
-
             {/* Store Routes */}
             <Route path="/store" element={<Store />}>
               <Route path="home" element={<Landing />} />
@@ -35,9 +35,18 @@ function App() {
               <Route path="about" element={<About />} />
               <Route path="product/:productId" element={<ProductPage />} />
 
+              {/* Auth Routes */}
+              <Route path="login" element={<Login />} />
+              <Route path="signup" element={<Signup />} />
+
               {/* Protected Routes */}
               <Route element={<ProtectedRoute />}>
-                <Route path="account" element={<Account />} />
+                <Route path="account" element={<Account />}>
+                  <Route path="profile" element={<Profile />} />
+                  <Route path="orders" element={<Orders />} />
+                  <Route path="orders/:orderId" element={<Order />} />
+                  <Route path="settings" element={<Settings />} />
+                </Route>
               </Route>
             </Route>
 

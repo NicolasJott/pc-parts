@@ -1,4 +1,4 @@
-import { ShippingForm } from "../components";
+import { ShippingForm } from "../../components";
 import { useCheckout } from "./Checkout";
 
 const Shipping = () => {

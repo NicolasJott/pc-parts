@@ -1,14 +1,4 @@
-import { SearchIcon } from "@chakra-ui/icons";
-import {
-  Box,
-  HStack,
-  Heading,
-  Input,
-  InputGroup,
-  InputRightElement,
-  Link,
-  Text,
-} from "@chakra-ui/react";
+import { Box, HStack, Heading, Link, Text } from "@chakra-ui/react";
 import { ShoppingCartDrawer } from "../ShoppingCart";
 
 export const NavBar = () => {
@@ -34,13 +24,13 @@ export const NavBar = () => {
           <Link color={"lightText.700"} href="/store/products">
             <Text fontSize={"sm"}>Products</Text>
           </Link>
-          <Link color={"lightText.700"} href="/store/about">
+          {/* <Link color={"lightText.700"} href="/store/about">
             <Text fontSize={"sm"}>About</Text>
-          </Link>
+          </Link> */}
         </HStack>
       </Box>
 
-      {/* Search Input */}
+      {/* Search Input
       <Box flex={"2"} display={"flex"} justifyContent={"center"}>
         <InputGroup w={"70%"} justifyContent={"center"} size={"sm"}>
           <Input
@@ -56,12 +46,12 @@ export const NavBar = () => {
             <SearchIcon fontSize={"inherit"} color={"lightText.800"} />
           </InputRightElement>
         </InputGroup>
-      </Box>
+      </Box> */}
 
       {/* Shopping Cart */}
       <Box flex={"1"} display={"flex"} justifyContent={"flex-end"}>
         <HStack gap={8} alignItems={"center"}>
-          <Link color={"lightText.700"} href="/store/account">
+          <Link color={"lightText.700"} href="/store/account/profile">
             <Text fontSize={"sm"}>Account</Text>
           </Link>
           <ShoppingCartDrawer />

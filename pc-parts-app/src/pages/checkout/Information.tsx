@@ -1,4 +1,4 @@
-import { InformationForm } from "../components";
+import { InformationForm } from "../../components";
 import { useCheckout } from "./Checkout";
 
 const Information = () => {

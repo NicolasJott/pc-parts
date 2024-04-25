@@ -112,7 +112,7 @@ export const LoginForm = () => {
         </VStack>
         <Text>
           Don't have an account?{" "}
-          <Link as={ReactRouterLink} to="/signup" color={"primary.900"}>
+          <Link as={ReactRouterLink} to="/store/signup" color={"primary.900"}>
             Sign Up
           </Link>
         </Text>

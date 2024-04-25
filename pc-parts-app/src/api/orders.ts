@@ -15,7 +15,7 @@ type Item = {
   quantity: number;
 };
 
-type LineItem = {
+export type LineItem = {
   product: IProduct;
 } & Item;
 
@@ -35,8 +35,8 @@ export type Order = {
   email: string;
   phoneNumber: string;
   created_at: string;
-  deliveryAddress: DeliveryAddress;
-  lineItems: LineItem[];
+  delivery_address: DeliveryAddress;
+  line_items: LineItem[];
 };
 
 // The getOrders function sends a GET request to the /orders endpoint to get all the orders. It returns the orders from the response.

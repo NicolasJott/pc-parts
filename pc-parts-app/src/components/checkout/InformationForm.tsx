@@ -15,7 +15,7 @@ import {
   UseFormRegister,
 } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import { CheckoutFormData } from "../../pages/Checkout";
+import { CheckoutFormData } from "../../pages/checkout/Checkout";
 
 interface IInformationFormProps {
   register: UseFormRegister<CheckoutFormData>;

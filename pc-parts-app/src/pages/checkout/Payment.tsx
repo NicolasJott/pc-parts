@@ -1,4 +1,4 @@
-import { PaymentForm } from "../components";
+import { PaymentForm } from "../../components";
 import { useCheckout } from "./Checkout";
 
 const Payment = () => {

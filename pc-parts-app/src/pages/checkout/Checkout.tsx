@@ -8,13 +8,13 @@ import {
   useForm,
 } from "react-hook-form";
 import { Outlet, useNavigate, useOutletContext } from "react-router-dom";
-import { getCart } from "../api/cart";
-import { getSessionCart } from "../api/cartSession";
-import { CreateOrderRequest, createOrder } from "../api/orders";
-import { CheckoutBreadCrumbs } from "../components";
-import { CustomSpinner } from "../components/CustomSpinner";
-import { OrderSummary } from "../components/checkout/OrderSummary";
-import { useAuth } from "../components/context/AuthContext";
+import { getCart } from "../../api/cart";
+import { getSessionCart } from "../../api/cartSession";
+import { CreateOrderRequest, createOrder } from "../../api/orders";
+import { CheckoutBreadCrumbs } from "../../components";
+import { CustomSpinner } from "../../components/CustomSpinner";
+import { OrderSummary } from "../../components/checkout/OrderSummary";
+import { useAuth } from "../../components/context/AuthContext";
 
 export interface CheckoutFormData {
   firstName: string;

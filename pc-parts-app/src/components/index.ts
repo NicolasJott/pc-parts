@@ -1,3 +1,4 @@
+export { BackButton } from "./BackButton";
 export * from "./ShoppingCart";
 export * from "./account";
 export * from "./auth";
