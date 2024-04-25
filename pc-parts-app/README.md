@@ -4,6 +4,8 @@ The PC Parts App is a web application that allows users to browse and search for
 
 by Nicolas Ott
 
+![PC Parts App](public/banner.png)
+
 **Prerequisites**
 
 - [Node.js](https://nodejs.org/en/download/)
