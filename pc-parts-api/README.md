@@ -1,8 +1,44 @@
+# PC Parts API
+
+by Nicolas Ott
+
 ## Installation
 
-**Prerequisite**
+**Prerequisites**
 
--   PHP 8.2
+To run this project, you will need to have the following installed:
+
+-   [PHP 8.2](https://www.php.net/downloads.php#gpg-8.2)
+-   [MySQL Community Server 8.0](https://dev.mysql.com/downloads/mysql/)
+-   [Composer](https://getcomposer.org/download/)
+
+---
+
+### Development Database
+
+Database connection is setup to use environment variables in a .env file. A example.env is provided that uses database and initial data variables for the following setup:
+
+**Creating the database**
+
+```sql
+CREATE DATABASE pc_parts_db;
+```
+
+**Creating the user**
+
+```sql
+CREATE USER 'pc_parts'@'localhost' IDENTIFIED BY 'pc_parts';
+```
+
+**Grant superuser privilege**
+
+```sql
+GRANT ALL PRIVILEGES ON *.* TO 'pc_parts'@'localhost' WITH GRANT OPTION;
+```
+
+---
+
+### Setup API
 
 To setup PC Parts api, first clone the project and change the directory.
 
@@ -10,51 +46,6 @@ To setup PC Parts api, first clone the project and change the directory.
 git clone https://github.com/NicolasJott/pc-parts.git
 cd pc-parts-api
 ```
-
-Then follow the process using either **[Docker](#with-docker-sail)** or **[Without Docker](#without-docker)** and you will have a fully running Laravel installation with Sanctum, all configured.
-
-### With Docker (Sail)
-
-[Laravel Sail](https://github.com/laravel/sail) is a light-weight command-line interface for interacting with Laravel's default Docker development environment.
-
-1. Copy `.env.example` to `.env`:
-
-    ```shell
-    cp .env.example .env
-    ```
-
-2. Install the dependencies:
-
-    ```shell
-    docker run --rm \
-        -u "$(id -u):$(id -g)" \
-        -v $(pwd):/var/www/html \
-        -w /var/www/html \
-        laravelsail/php82-composer:latest \
-        composer install --ignore-platform-reqs
-    ```
-
-3. Run the containers:
-
-    ```shell
-    ./vendor/bin/sail up -d
-    ```
-
-4. Generate application key:
-
-    ```shell
-    ./vendor/bin/sail artisan key:generate
-    ```
-
-5. Run database migration with seeder:
-
-    ```shell
-    ./vendor/bin/sail artisan migrate --seed
-    ```
-
-To learn more about Sail, visit the [official Doc](https://laravel.com/docs/9.x/sail).
-
-### Without Docker
 
 1. Copy `.env.example` to `.env`:
 
@@ -86,3 +77,12 @@ To learn more about Sail, visit the [official Doc](https://laravel.com/docs/9.x/
     php artisan serve
     ```
 
+### Viewing the Interactive API Docs
+
+**For Swagger UI**
+
+-   http://localhost:8000/swagger-ui
+
+**For ReDoc**
+
+-   http://localhost:8000/redoc
